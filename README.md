@@ -11,6 +11,12 @@ Minimal static website for the Typez iPhone keyboard.
 
 There is no framework, package manager, JavaScript bundle, or build step.
 
+## Privacy policy source of truth
+
+`privacy.html` is the canonical Typez privacy policy. The iOS app links to the
+deployed page instead of bundling a duplicate policy. Update this page whenever
+the Amplitude, RevenueCat, keyboard, purchase, or website data practices change.
+
 ## Preview locally
 
 From this directory, run:

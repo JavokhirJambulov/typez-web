@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Learn how Typez handles keyboard, clipboard, settings, and website data."
+      content="Learn how Typez handles keyboard input, clipboard items, analytics, purchases, and website data."
     />
     <meta name="theme-color" content="#f4f1eb" />
     <link
@@ -33,7 +33,7 @@
       <header class="legal-header">
         <p class="eyebrow">Typez</p>
         <h1>Privacy Policy</h1>
-        <p class="legal-updated">Last updated: August 22, 2026</p>
+        <p class="legal-updated">Last updated: August 30, 2026</p>
         <p class="legal-intro">
           Typez is designed to make typing more useful without turning what you
           type into a product. This policy explains what the Typez app and this
@@ -60,19 +60,19 @@
         </section>
 
         <section>
-          <h2>2. Optional app analytics</h2>
+          <h2>2. App analytics</h2>
           <p>
-            If you choose “Share App Analytics,” Typez uses Amplitude, Inc. to
-            understand how the containing app is used. Typez records app opens,
+            When you use the Typez containing app, Typez uses Amplitude, Inc. to
+            collect limited product analytics. Typez records app activations,
             screens viewed, onboarding steps completed, paywall views, and
             paywall actions. Event timestamps are recorded automatically.
           </p>
           <p>
-            Events include a randomly generated installation identifier and
-            limited technical information such as the app version,
-            operating-system name, and operating-system version. Typez does not
-            use analytics for advertising or to track you across other
-            companies' apps or websites.
+            Analytics events include a randomly generated device or installation
+            identifier and limited technical information such as the app
+            version, platform, operating-system name, and operating-system
+            version. Typez does not use analytics for advertising or to track
+            you across other companies' apps or websites.
           </p>
           <p>
             Analytics never includes keys you press, words you type, surrounding
@@ -85,14 +85,41 @@
             Typez disables Amplitude autocapture, session replay, IDFV,
             IP-address event properties, location properties, carrier
             information, language properties, and device-model properties.
-            Analytics is off until you make a choice. You can turn “Share App
-            Analytics” on or off at any time in Typez Settings. Turning it off
-            stops future analytics collection from the app.
           </p>
         </section>
 
         <section>
-          <h2>3. Information stored on your device</h2>
+          <h2>3. Purchases and RevenueCat</h2>
+          <p>
+            Typez uses RevenueCat, Inc. to load purchase offerings, coordinate
+            purchases and restores with Apple, validate App Store transactions,
+            and determine whether Typez Pro features are available. Apple
+            processes payments. Typez and RevenueCat do not receive your full
+            payment-card details from App Store purchases.
+          </p>
+          <p>
+            Typez configures RevenueCat without a custom account identifier, so
+            the RevenueCat SDK generates a random anonymous App User ID for the
+            installation. Typez does not provide RevenueCat with your name,
+            email address, Typez account information, or advertising identifier.
+          </p>
+          <p>
+            RevenueCat may receive the anonymous App User ID, app and device
+            technical information, product and offering identifiers, entitlement
+            status, and Apple receipt and transaction information such as
+            purchase, trial, renewal, expiration, cancellation, and refund
+            status. RevenueCat may also process an IP address and infer a general
+            location as described in its privacy policy.
+          </p>
+          <p>
+            Typez receives entitlement information from RevenueCat and stores a
+            limited local snapshot of the Pro state, expiration date when
+            applicable, and the date it was verified.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Information stored on your device</h2>
           <p>Typez may store the following information locally:</p>
           <ul>
             <li>Clipboard items you explicitly save or import</li>
@@ -100,6 +127,7 @@
             <li>Recently used emoji</li>
             <li>Keyboard preferences such as theme, font, rows, and haptics</li>
             <li>Keyboard setup and Typez Pro entitlement status</li>
+            <li>Random SDK identifiers and cached service state used for analytics and purchases</li>
           </ul>
           <p>
             This information is stored in Typez's local app containers and, when
@@ -111,7 +139,7 @@
         </section>
 
         <section>
-          <h2>4. Full Access and clipboard use</h2>
+          <h2>5. Full Access and clipboard use</h2>
           <p>
             Core typing and cursor navigation work without Full Access. Some
             optional functionality, including making saved clipboard items
@@ -126,16 +154,6 @@
             changed; this metadata check does not read the clipboard text.
             Enabling Full Access does not cause Typez to upload your typing or
             document text.
-          </p>
-        </section>
-
-        <section>
-          <h2>5. Purchases</h2>
-          <p>
-            If Typez offers purchases, Apple processes the transaction. Typez
-            does not receive your full payment-card details. The app may store
-            the entitlement needed to remember whether Pro features are
-            available to you.
           </p>
         </section>
 
@@ -159,13 +177,16 @@
           <p>
             Typez does not sell personal information. Information may be handled
             by service providers only when necessary to provide Typez: Amplitude
-            processes optional app analytics when you enable it, Vercel hosts
-            this website, and Apple distributes the app and processes purchases.
-            Information may also be disclosed when required by law.
+            processes app analytics, RevenueCat manages purchase and entitlement
+            information, Vercel hosts this website, and Apple distributes the
+            app and processes App Store transactions. Information may also be
+            disclosed when required by law.
           </p>
           <p>
-            Amplitude processes analytics on our behalf under its
-            <a href="https://amplitude.com/privacy">Privacy Notice</a>.
+            Learn more in the
+            <a href="https://amplitude.com/privacy">Amplitude Privacy Notice</a>
+            and
+            <a href="https://www.revenuecat.com/privacy-policy">RevenueCat Privacy Policy</a>.
           </p>
         </section>
 
@@ -174,19 +195,25 @@
           <p>
             On-device information remains until you delete it in Typez, reset
             the relevant settings, or remove the app. Typez does not currently
-            maintain user accounts or a remote copy of your saved keyboard data.
+            maintain user accounts or its own remote copy of your saved keyboard
+            data. Removing the app does not automatically delete information
+            already processed by Amplitude, RevenueCat, Apple, or Vercel.
+          </p>
+          <p>
+            Analytics data is retained only as long as needed to understand
+            product usage and improve Typez, with a target maximum retention
+            period of 12 months. RevenueCat and Apple may retain purchase and
+            transaction records as needed to provide entitlements, restore
+            purchases, prevent fraud, comply with financial or legal obligations,
+            and resolve disputes.
           </p>
           <p>
             You can disable or remove the Typez keyboard at any time in iOS
             Settings. You can also turn off Full Access without losing core
-            typing and cursor navigation.
-          </p>
-          <p>
-            Optional analytics is retained only as long as needed to understand
-            product usage and improve Typez, with a target maximum retention
-            period of 12 months. Turning off “Share App Analytics” stops future
-            collection. You may also contact the developer to request deletion
-            of analytics associated with your installation.
+            typing and cursor navigation. To request deletion of analytics or
+            purchase-service data associated with your installation, contact the
+            developer. Some transaction records may need to be retained where
+            permitted or required by law.
           </p>
         </section>
 
@@ -211,9 +238,9 @@
         <section>
           <h2>11. Contact</h2>
           <p>
-            For privacy questions or analytics deletion requests, use Contact
-            Support in Typez Settings or the support contact listed on the Typez
-            App Store page. For website feedback that does not contain personal
+            For privacy questions or deletion requests, use Contact Support in
+            Typez Settings or the support contact listed on the Typez App Store
+            page. For website feedback that does not contain personal
             information, you may use the
             <a href="https://github.com/JavokhirJambulov/typez-web/issues">Typez website repository</a>.
           </p>
