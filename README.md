@@ -48,5 +48,6 @@ Then open `http://localhost:8080`.
 - Replace every `https://apps.apple.com/` placeholder with the final Typez App Store listing URL.
 - Add the canonical URL and social-sharing image after the final domain is chosen.
 - Review the privacy policy and terms whenever the app's data practices change.
-- Add a production support email address when domain email is configured.
-- Confirm the developer or business name that should appear in the legal pages.
+- Configure and document the production Amplitude retention period before release.
+- Keep `support@typez.app` routing active and monitored.
+- Keep the developer or business identity in the legal pages current.
