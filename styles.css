@@ -54,23 +54,14 @@ a {
 .footer-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  width: 32px;
-  height: 32px;
-  place-items: center;
-  border-radius: 9px;
-  background: var(--ink);
-  color: white;
-  font-size: 17px;
-  font-weight: 750;
+.brand-logo {
+  display: block;
+  width: 98px;
+  height: auto;
+  border-radius: 10px;
   box-shadow: 0 5px 14px rgba(27, 27, 29, 0.14);
 }
 
@@ -751,6 +742,11 @@ p {
 
   .site-header {
     min-height: 68px;
+  }
+
+  .brand-logo {
+    width: 88px;
+    border-radius: 9px;
   }
 
   .site-nav {
