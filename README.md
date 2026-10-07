@@ -7,7 +7,9 @@ Minimal static website for the Typez iPhone keyboard.
 - `index.html` — landing page
 - `privacy.html` — privacy policy
 - `terms.html` — terms of use
-- `styles.css` — shared styling for all three pages
+- `support.html` — support contact and keyboard/purchase help
+- `styles.css` — shared styling for all pages
+- `vercel.json` — serves `/support` from `support.html`
 
 There is no framework, package manager, JavaScript bundle, or build step.
 
@@ -26,6 +28,11 @@ python3 -m http.server 8080
 ```
 
 Then open `http://localhost:8080`.
+
+The basic Python server does not apply Vercel rewrites. Preview the support
+page at `http://localhost:8080/support.html`; Vercel serves the published page
+at `https://typez.app/support`. Use that exact HTTPS URL for the App Store
+Connect Support URL. Keep `support@typez.app` routing active and monitored.
 
 ## Deploy on Vercel
 
