@@ -671,8 +671,7 @@ p {
   border-top: 1px solid var(--line);
 }
 
-.support-section-heading h2,
-.support-report h2 {
+.support-section-heading h2 {
   margin: 0;
   font-size: clamp(32px, 3.5vw, 44px);
   font-weight: 720;
@@ -701,9 +700,7 @@ p {
 }
 
 .support-answer p,
-.support-answer li,
-.support-report p,
-.support-report li {
+.support-answer li {
   color: var(--muted);
   font-size: 16px;
   line-height: 1.75;
@@ -717,41 +714,19 @@ p {
   margin-top: 14px;
 }
 
-.support-answer ol {
+.support-answer ol,
+.support-answer ul {
   margin: 0 0 14px;
   padding-left: 24px;
 }
 
-.support-answer li + li,
-.support-report li + li {
+.support-answer li + li {
   margin-top: 6px;
 }
 
-.support-answer a,
-.support-report a {
+.support-answer a {
   color: var(--blue);
   text-underline-offset: 3px;
-}
-
-.support-report {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 64px;
-  align-items: center;
-  margin-top: 72px;
-  padding: 44px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-medium);
-  background: var(--surface);
-}
-
-.support-report p {
-  margin: 20px 0 0;
-}
-
-.support-report ul {
-  margin: 0;
-  padding-left: 22px;
 }
 
 .support-page a:focus-visible,
@@ -819,8 +794,7 @@ p {
   }
 
   .support-hero,
-  .support-help,
-  .support-report {
+  .support-help {
     grid-template-columns: 1fr;
     gap: 32px;
   }
@@ -829,8 +803,7 @@ p {
     font-size: 18px;
   }
 
-  .support-contact,
-  .support-report {
+  .support-contact {
     padding: 26px;
   }
 
@@ -841,10 +814,6 @@ p {
   .support-help {
     margin-top: 56px;
     padding-top: 40px;
-  }
-
-  .support-report {
-    margin-top: 48px;
   }
 
   .shell {
