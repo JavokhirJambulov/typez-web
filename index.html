@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#f2f2f7" />
     <link rel="icon" type="image/png" sizes="512x512" href="assets/typez-icon.png" />
     <link rel="apple-touch-icon" href="assets/typez-icon.png" />
-    <link rel="stylesheet" href="styles.css?v=5" />
+    <link rel="stylesheet" href="styles.css?v=6" />
     <title>Typez — Type faster. Move precisely.</title>
   </head>
 
@@ -30,7 +30,7 @@
         <a href="#clipboard">Product</a>
         <a href="#privacy">Privacy</a>
         <a class="mobile-link" href="/support">Support</a>
-        <a class="nav-cta" href="https://apps.apple.com/">Download</a>
+        <a class="nav-cta" href="#waitlist">Join the waitlist</a>
       </nav>
     </header>
 
@@ -43,8 +43,26 @@
             Typez makes small edits fast with precise cursor controls, saved
             text, and a keyboard you can make your own.
           </p>
+          <div class="waitlist" id="waitlist">
+            <p class="waitlist-intro" id="waitlist-intro">Coming soon to iPhone. Get notified when Typez launches.</p>
+            <form
+              id="waitlist-form"
+              method="post"
+              action="https://73a021b1.sibforms.com/serve/MUIFAJzJCEq6LIyM672l77MNlIS7_9-IuZTh9Uq9bwdL-Rsa-karms59n4uNoaCaECRkDdR7xQdgaJzWU8uC-xZETCNC_1fc0tniNM07LOFlQzyPKm6k3sVnfevvOuMVpMWwpTKcvHo6fbj_c9rolTOViBs6ANSQjg-DMYHMD2K442VjnqejIJLxGoid0ez9cRxywWButw6xQEGWhA=="
+              aria-describedby="waitlist-intro waitlist-note"
+            >
+              <label class="visually-hidden" for="waitlist-email">Email address</label>
+              <div class="waitlist-fields">
+                <input id="waitlist-email" name="EMAIL" type="email" autocomplete="email" placeholder="Your email address" required />
+                <button class="primary-button" type="submit">Notify me at launch</button>
+              </div>
+              <input class="visually-hidden" type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <input type="hidden" name="locale" value="en" />
+              <p class="waitlist-status" id="waitlist-status" role="status" aria-live="polite" aria-atomic="true"></p>
+            </form>
+            <p class="waitlist-note" id="waitlist-note">Launch updates only. Unsubscribe anytime. <a href="privacy.html">Privacy policy</a>.</p>
+          </div>
           <div class="hero-actions">
-            <a class="primary-button" href="https://apps.apple.com/">Download on the App Store</a>
             <a class="text-link dark-link" href="#clipboard">See how it works <span>↓</span></a>
           </div>
         </div>
@@ -152,9 +170,9 @@
       </section>
 
       <section class="final-cta shell">
-        <p class="eyebrow">Available for iPhone</p>
+        <p class="eyebrow">Coming soon to iPhone</p>
         <h2>Make your next edit<br />the easy one.</h2>
-        <a class="primary-button final-download" href="https://apps.apple.com/">Download on the App Store</a>
+        <a class="primary-button final-download" href="#waitlist">Join the waitlist</a>
       </section>
     </main>
 
@@ -170,6 +188,7 @@
       <p>© 2026 Typez. Built by Javokhir.</p>
     </footer>
 
+    <script defer src="waitlist.js"></script>
     <!-- Vercel Web Analytics -->
     <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
   </body>

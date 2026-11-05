@@ -161,18 +161,105 @@ p {
   min-height: 54px;
   place-items: center;
   padding: 0 22px;
+  border: 0;
   border-radius: 15px;
   background: var(--ink);
   color: white;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 680;
   text-decoration: none;
+  cursor: pointer;
   transition: background 160ms ease, transform 160ms ease;
 }
 
 .primary-button:hover {
   background: #343438;
   transform: translateY(-1px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.waitlist {
+  margin-top: 30px;
+  scroll-margin-top: 30px;
+}
+
+.waitlist-intro,
+.waitlist-note,
+.waitlist-status {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.waitlist-intro {
+  margin: 0 0 12px;
+}
+
+.waitlist-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.waitlist-fields input {
+  flex: 1 1 190px;
+  min-width: 0;
+  min-height: 54px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+}
+
+.waitlist-fields .primary-button {
+  flex: 0 0 auto;
+  border-radius: 999px;
+}
+
+.waitlist-fields input:focus-visible,
+.primary-button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.waitlist-fields button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+}
+
+.waitlist-status:empty {
+  display: none;
+}
+
+.waitlist-status {
+  margin: 12px 0 0;
+  color: var(--ink);
+}
+
+.waitlist-status[data-error="true"] {
+  color: #a12424;
+}
+
+.waitlist-note {
+  margin: 12px 0 0;
+}
+
+.waitlist-note a {
+  text-underline-offset: 3px;
 }
 
 .text-link {
@@ -759,6 +846,11 @@ p {
     justify-content: center;
   }
 
+  .waitlist {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
   .hero-product {
     width: min(100%, 620px);
     margin-inline: auto;
@@ -867,6 +959,10 @@ p {
 
   .primary-button {
     width: min(100%, 340px);
+  }
+
+  .waitlist-fields .primary-button {
+    flex: 1 0 auto;
   }
 
   .demo-frame {
