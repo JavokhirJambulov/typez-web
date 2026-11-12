@@ -50,6 +50,12 @@ Vercel applies the host and legacy-page redirects after deployment.
 See [the search pilot](docs/search-pilot.md) for the baseline, publishing checklist,
 production checks, and how to evaluate the first post.
 
+Prepared guides are released Monday, Wednesday, and Friday at 10:00 Asia/Seoul
+by `.github/workflows/publish-guides.yml`. See the
+[editorial calendar](docs/editorial-calendar.md) for the three prepared posts,
+future topic backlog, and how to pause the queue. The workflow publishes existing
+drafts; it does not automatically write new articles when the queue runs out.
+
 ## Privacy policy source of truth
 
 `privacy.html` is the canonical Typez privacy policy. The iOS app links to the

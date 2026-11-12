@@ -1,6 +1,7 @@
 # Typez search pilot
 
-Start with one useful guide and measure it before committing to a publishing rate.
+Publish prepared guides one at a time, three times per week, and measure the pilot.
+See the [editorial calendar](editorial-calendar.md) for the queue and schedule.
 First page: `/guides/iphone-clipboard-history/`.
 Primary question: “Does iPhone have clipboard history?” Related intent: finding
 copied text and saving text for reuse. These are topic choices, not verified

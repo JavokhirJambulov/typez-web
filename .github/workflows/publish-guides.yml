@@ -1,0 +1,55 @@
+name: Publish a prepared Typez guide
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-guides.yml'
+      - '.publishing/**'
+      - 'scripts/publish-guide.mjs'
+      - 'tests/**'
+  schedule:
+    # 01:00 UTC = 10:00 Asia/Seoul. GitHub schedules may run late.
+    - cron: '0 1 * * 1,3,5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: typez-guide-publishing
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Publish at most one reviewed guide due today
+        if: github.event_name != 'push'
+        run: node scripts/publish-guide.mjs
+      - name: Validate site and publishing behavior
+        run: node --test tests/*.test.mjs
+      - name: Commit publication for Vercel
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add guides sitemap.xml .publishing/queue.json
+          if git diff --cached --quiet; then
+            echo 'No guide published. The queue may be empty, not yet due, or already published today.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # Keep the prepared guide's author; identify the automated committer separately.
+          article_author="$(git log -1 --format='%an <%ae>' -- guides/iphone-clipboard-history/index.html)"
+          git commit --author="$article_author" -m 'Publish scheduled iPhone keyboard guide'
+          # A concurrent main update rejects this push safely; never force-push.
+          git push origin HEAD:main

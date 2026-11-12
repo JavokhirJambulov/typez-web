@@ -1,0 +1,171 @@
+{
+  "timezone": "Asia/Seoul",
+  "schedule": "Monday, Wednesday, Friday at 10:00",
+  "articles": [
+    {
+      "slug": "iphone-keyboard-number-row",
+      "scheduledFor": "2026-11-13",
+      "title": "How to Get a Number Row on Your iPhone Keyboard",
+      "description": "Want numbers above the letters on iPhone? Learn what Apple’s standard keyboard offers, a quicker way to type digits, and when a number-row keyboard helps.",
+      "category": "Keyboard layouts",
+      "deck": "Options for typing numbers without constantly switching between letters and digits.",
+      "answer": "On the standard English iPhone keyboard, there is no setting that adds a permanent number row above the letters. You can switch with the 123 key, use a press-and-slide gesture for a single digit, or choose a third-party keyboard with a number row. Layouts vary by language, app, and device; the iPad keyboard is different.",
+      "sections": [
+        [
+          "apple-keyboard",
+          "Can you add a number row to Apple’s iPhone keyboard?",
+          "<p>For the standard English letter layout, Apple does not offer a “show number row” toggle. The number and symbol layout is a separate view, opened with <strong>123</strong>. Changing keyboard feedback, predictive text, or one-handed mode does not add another row of keys.</p><p>Some apps request a numeric keypad for a phone number, amount, or code. That keypad belongs to that input field; it does not change your letter keyboard everywhere else. Instructions for an iPad’s number gestures also do not necessarily apply to an iPhone.</p>"
+        ],
+        [
+          "single-number",
+          "A faster way to type one number",
+          "<p>If you only need an occasional digit, try this with Apple’s standard English keyboard:</p><ol><li>In a normal text field, touch and hold <strong>123</strong>.</li><li>Without lifting your finger, slide to the number you want.</li><li>Lift your finger to enter it and return to the letter layout.</li></ol><p>For several digits in a row, simply tap <strong>123</strong>, type the numbers, and tap <strong>ABC</strong> to return. The press-and-slide gesture is a useful shortcut, but it is not a persistent number row. Keyboard layouts and gesture behavior can differ, so try it in a note before relying on it in another app.</p>"
+        ],
+        [
+          "number-row-keyboard",
+          "When a dedicated number row helps",
+          "<p>If you frequently mix letters and numbers—street addresses, product names, reference numbers, or dates—a visible row can reduce layout switching. The tradeoff is space: an extra row can take more screen height or require a denser layout.</p><p>Typez includes a number row above the letters, alongside precise cursor controls and saved text. This guide is published by Typez’s creator, so that recommendation is our own product. Typez is currently in App Store review; <a href=\"/#waitlist\">join the waitlist for a TestFlight invitation</a> if you want to try it.</p><p>Use a keyboard that fits the text you write most often. A person who mainly writes messages may prefer a simpler layout; someone repeatedly entering mixed codes may value the extra row more.</p>"
+        ],
+        [
+          "enable-keyboard",
+          "How to enable another keyboard",
+          "<p>After installing a keyboard app, open <strong>Settings → General → Keyboard → Keyboards → Add New Keyboard</strong> and select it. Open a text field, touch and hold the globe key, and choose the keyboard. See <a href=\"/support\">Typez setup help</a> for the Typez-specific steps.</p><p>A third-party keyboard will not appear in every field. iOS uses its own keyboard for secure input and certain phone pads, and an app can disallow custom keyboards. That means a number-row keyboard cannot promise the same layout everywhere.</p>"
+        ],
+        [
+          "permissions",
+          "Do you need Full Access just for a number row?",
+          "<p>An extra row of keys does not inherently require network access. Permissions depend on the keyboard and the feature. In Typez, core typing and cursor navigation work without Full Access; optional clipboard functionality requires it because of iOS restrictions.</p><p>Review the app’s privacy policy rather than enabling permissions just because a tutorial says to. Typez’s <a href=\"/privacy.html\">privacy policy</a> explains the difference between typing and clipboard access.</p>"
+        ],
+        [
+          "other-options",
+          "An alternative for numbers you repeat",
+          "<p>A number row helps you enter new text. It may not be the quickest answer for an address or reference string you reuse unchanged. Apple’s Text Replacement can expand a shortcut into a phrase; saved text can insert an item you deliberately kept.</p><p>Our <a href=\"/guides/iphone-clipboard-history/\">iPhone clipboard-history guide</a> compares Notes, Text Replacement, and Typez’s saved-text clipboard. None restores an older clipboard item that was overwritten before you saved it.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Add or change keyboards on iPhone",
+          "https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios"
+        ],
+        [
+          "Apple: Type with the onscreen keyboard",
+          "https://support.apple.com/guide/iphone/type-with-the-onscreen-keyboard-iph3c50f96e/ios"
+        ],
+        [
+          "Apple developer documentation: Custom keyboards (archived)",
+          "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/CustomKeyboard.html"
+        ]
+      ]
+    },
+    {
+      "slug": "iphone-keyboard-full-access",
+      "scheduledFor": "2026-11-16",
+      "title": "What Does Allow Full Access Mean for iPhone Keyboards?",
+      "description": "Understand the iPhone keyboard Full Access warning, which permissions it expands, what it does not prove, and how Typez handles typing and saved text.",
+      "category": "Keyboard privacy",
+      "deck": "What the permission enables, why iOS warns you, and what to check before you turn it on.",
+      "answer": "Allow Full Access expands what a third-party iPhone keyboard can do, including network access and sharing data with its containing app. It is a permission, not proof that the keyboard sends your typing anywhere. Whether an app collects or transmits data depends on its implementation and policies. You can leave it off when you do not need the features that require it.",
+      "sections": [
+        [
+          "meaning",
+          "What changes when you allow Full Access?",
+          "<p>A third-party keyboard runs as an extension with restrictions. Apple documents that requesting open access expands its sandbox, allowing capabilities such as network access and a shared container with the keyboard’s main app.</p><p>Those capabilities can support legitimate features, but they create a reason to choose the developer carefully. A permission being available does not tell you how the developer uses it, and a privacy-friendly slogan does not replace an explanation.</p><p>Apple’s documentation for custom keyboards is archived and uses some older interface terminology. It is useful for the permission model; use the current iPhone Settings interface for the steps below.</p>"
+        ],
+        [
+          "warning",
+          "Does Full Access mean the app reads everything I type?",
+          "<p>Do not read Apple’s warning as a report that a particular app has already uploaded your text. It describes a capability and the trust involved in granting it. A keyboard receives input while you use it; network permission can allow that input to be sent off the device if its developer implements that behavior.</p><p>Secure text fields use Apple’s system keyboard instead of a custom keyboard. Apps can also block custom keyboards. Those restrictions are useful, but they are not a reason to ignore the privacy practices of a keyboard you use for ordinary messages.</p>"
+        ],
+        [
+          "check-policy",
+          "What to check before enabling it",
+          "<ul><li><strong>Typed content:</strong> Does the developer explicitly say whether it collects or sends the text you enter?</li><li><strong>Copied text:</strong> Are imports deliberate, or does the product claim to capture copies automatically?</li><li><strong>Storage:</strong> Are saved items local, synced, or uploaded? What happens when you delete the app?</li><li><strong>Other data:</strong> Analytics and crash reports are separate from message contents. Check both.</li><li><strong>Feature need:</strong> Which feature stops working with Full Access off?</li></ul><p>The App Store privacy label is a useful starting point, alongside the full policy. Neither a permission toggle nor a marketing label is an independent security audit.</p>"
+        ],
+        [
+          "typez",
+          "How Typez uses Full Access",
+          "<p>Typez’s core typing and cursor navigation work without Full Access. Optional clipboard functionality, including making saved items available inside the keyboard, needs Full Access because of iOS restrictions.</p><p>Typez reads clipboard text after you choose an import action. Saved clipboard items stay on the device. Enabling Full Access does not cause Typez to upload typing or clipboard contents, and those contents are not included in analytics. Typez does use other app analytics and purchase services, described in the <a href=\"/privacy.html\">privacy policy</a>.</p><p>This guide is published by Typez’s creator. Typez is currently in App Store review; <a href=\"/#waitlist\">join the waitlist for a TestFlight invitation</a> to try it.</p>"
+        ],
+        [
+          "settings",
+          "How to turn Full Access on or off",
+          "<ol><li>Open iPhone <strong>Settings</strong>.</li><li>Go to <strong>General → Keyboard → Keyboards</strong>.</li><li>Select the third-party keyboard.</li><li>Change <strong>Allow Full Access</strong>. Read and consider the system warning before confirming.</li></ol><p>If the keyboard is missing, install its app and add it through <strong>Add New Keyboard</strong> first. The toggle’s availability depends on what the keyboard requests. For Typez, see <a href=\"/support\">setup and permission help</a>.</p><p>Turning permission off does not retract data a service previously received. If you stop using an app, check its deletion process as well.</p>"
+        ],
+        [
+          "clipboard",
+          "Full Access does not create clipboard history",
+          "<p>Enabling the permission does not give a keyboard a retrospective list of text you copied before installing it. It also does not turn an iPhone into a device with a built-in clipboard-history screen.</p><p>Typez deliberately imports items you choose to save. Read <a href=\"/guides/iphone-clipboard-history/\">what iPhone clipboard history can and cannot do</a> before expecting an app to recover overwritten text.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple developer documentation: Custom keyboards (archived)",
+          "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/CustomKeyboard.html"
+        ],
+        [
+          "Apple: Add or change keyboards on iPhone",
+          "https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios"
+        ],
+        [
+          "Typez privacy policy",
+          "/privacy.html"
+        ]
+      ]
+    },
+    {
+      "slug": "iphone-keeps-switching-keyboards",
+      "scheduledFor": "2026-11-18",
+      "title": "Why Does iPhone Keep Switching Back to Apple’s Keyboard?",
+      "description": "Find out why your iPhone switches away from a third-party keyboard, when that is expected, and which setup checks can help without deleting saved data.",
+      "category": "Keyboard troubleshooting",
+      "deck": "Some switches are expected iOS behavior. Here is how to tell them apart from a setup problem.",
+      "answer": "iPhone temporarily uses Apple’s keyboard for secure text fields and certain phone pads, even when you selected a third-party keyboard. An app can also disallow custom keyboards. If the switch happens in ordinary text fields across multiple apps, check that your keyboard is enabled, select it again with the globe key, and check for app or iOS updates. Full Access does not override these restrictions.",
+      "sections": [
+        [
+          "expected-switches",
+          "When switching to Apple’s keyboard is expected",
+          "<p>Apple’s custom-keyboard documentation describes three important limits:</p><ul><li><strong>Secure text fields:</strong> The system replaces a custom keyboard when a field is marked as secure, commonly for a password.</li><li><strong>Phone-pad fields:</strong> Certain input types use the system’s phone keypad.</li><li><strong>Apps that block extensions:</strong> An app developer can reject custom keyboards throughout the app.</li></ul><p>Apple’s developer explanation is archived, but it documents the reason these changes can occur. Field configuration matters: do not assume every code box, banking app, or login screen behaves identically.</p><p>If your keyboard returns when you move from a protected field to a normal message field, that is consistent with iOS temporarily substituting its own keyboard.</p>"
+        ],
+        [
+          "compare-fields",
+          "First, compare two ordinary text fields",
+          "<p>Before changing settings, identify where the problem happens. Open a normal note and select your keyboard, then try an ordinary message field in another app.</p><ul><li>If the keyboard works in both but disappears in one particular app, the issue may be the app or its field restrictions.</li><li>If it disappears only in a password or phone-number field, the switch may be expected.</li><li>If it repeatedly disappears in normal fields across apps, investigate setup, updates, or a possible extension problem.</li></ul><p>This comparison narrows the issue; it does not by itself diagnose a crash. Record the app and field where the switch occurs so support can reproduce it.</p>"
+        ],
+        [
+          "select-keyboard",
+          "Check that the keyboard is installed and selected",
+          "<ol><li>Open <strong>Settings → General → Keyboard → Keyboards</strong>.</li><li>Confirm your keyboard is listed. If needed, use <strong>Add New Keyboard</strong> to add it.</li><li>Open a normal text field.</li><li>Touch and hold the globe key and choose your keyboard from the list.</li></ol><p>You can use the keyboard list’s editing controls to change the order of your enabled keyboards. Treat that as an ordering preference, not a way to bypass secure fields or an app’s restrictions.</p><p>For Typez-specific installation steps, visit <a href=\"/support\">Typez support</a>.</p>"
+        ],
+        [
+          "full-access",
+          "Will Full Access stop the switching?",
+          "<p>No. Full Access expands a keyboard extension’s permissions; it does not force apps to accept it or let it replace the system keyboard in restricted fields.</p><p>Do not enable the permission solely to fix an expected switch in a password field. In Typez, core typing and cursor navigation work without Full Access, while optional clipboard functionality requires it. The <a href=\"/privacy.html\">privacy policy</a> describes that distinction.</p>"
+        ],
+        [
+          "persistent-problem",
+          "If it still switches in ordinary text fields",
+          "<p>Check for updates to the keyboard app, the affected app, and iOS. Open the keyboard’s containing app once and follow any setup instructions it provides. If the issue persists, restart the iPhone and repeat the two-field comparison.</p><p>A keyboard extension that stops unexpectedly is a possible explanation, not a conclusion you can draw from a layout change alone. When contacting support, include your iPhone model, iOS version, keyboard version, affected app, and whether it happens in Notes too. Do not send passwords or private message contents as test material.</p><p>Avoid deleting the keyboard app as your first troubleshooting step. In Typez, saved clipboard items are local, and removing the app can remove those items. Keep another copy of anything important.</p>"
+        ],
+        [
+          "typez",
+          "What to expect when using Typez",
+          "<p>Typez is a third-party iPhone keyboard, so it follows these system restrictions too. Its cursor controls, number row, and saved-text clipboard do not override an app’s decision to use Apple’s keyboard.</p><p>This guide is published by Typez’s creator. Typez is currently in App Store review; <a href=\"/#waitlist\">join the waitlist for a TestFlight invitation</a>. For help with saved items, read our <a href=\"/guides/iphone-clipboard-history/\">iPhone clipboard-history guide</a> before trying an uninstall.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Add or change keyboards on iPhone",
+          "https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios"
+        ],
+        [
+          "Apple developer documentation: Custom keyboards (archived)",
+          "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/CustomKeyboard.html"
+        ],
+        [
+          "Typez setup and support",
+          "/support"
+        ]
+      ]
+    }
+  ]
+}
