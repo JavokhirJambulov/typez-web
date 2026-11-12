@@ -575,6 +575,10 @@ p {
   text-align: center;
 }
 
+.final-cta .hero-text {
+  margin-inline: auto;
+}
+
 .final-cta h2 {
   max-width: 900px;
   margin-inline: auto;
@@ -595,6 +599,7 @@ p {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   font-size: 13px;
 }

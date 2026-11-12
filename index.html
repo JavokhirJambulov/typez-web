@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Typez is a private, customizable iPhone keyboard with precise cursor controls and saved text ready when you need it."
+      content="Typez is a customizable iPhone keyboard with saved text, a number row, and precise cursor controls. Join the waitlist for a TestFlight invitation."
     />
-    <meta property="og:title" content="Typez — Type faster. Move precisely." />
+    <meta property="og:title" content="Typez — iPhone Keyboard with Clipboard &amp; Cursor Controls" />
     <meta
       property="og:description"
       content="Move the cursor by character or word, paste saved text, and make your iPhone keyboard your own."
     />
     <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://typez.app/" />
+    <meta property="og:url" content="https://typez.app/" />
+    <meta property="og:image" content="https://typez.app/assets/typez-clipboard.jpg" />
+    <meta property="og:image:alt" content="Typez keyboard clipboard with saved text" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#f2f2f7" />
     <link rel="icon" type="image/png" sizes="512x512" href="assets/typez-icon.png" />
     <link rel="apple-touch-icon" href="assets/typez-icon.png" />
-    <link rel="stylesheet" href="styles.css?v=6" />
-    <title>Typez — Type faster. Move precisely.</title>
+    <link rel="stylesheet" href="styles.css?v=7" />
+    <title>Typez — iPhone Keyboard with Clipboard &amp; Cursor Controls</title>
   </head>
 
   <body>
     <header class="site-header shell">
-      <a class="brand" href="index.html" aria-label="Typez home">
+      <a class="brand" href="/" aria-label="Typez home">
         <img class="brand-logo" src="assets/typez-logo.png" width="450" height="165" alt="Typez" />
       </a>
 
       <nav class="site-nav" aria-label="Main navigation">
+        <a class="mobile-link" href="/guides/">Guides</a>
         <a href="#clipboard">Product</a>
         <a href="#privacy">Privacy</a>
         <a class="mobile-link" href="/support">Support</a>
@@ -44,7 +50,7 @@
             text, and a keyboard you can make your own.
           </p>
           <div class="waitlist" id="waitlist">
-            <p class="waitlist-intro" id="waitlist-intro">Coming soon to iPhone. Get notified when Typez launches.</p>
+            <p class="waitlist-intro" id="waitlist-intro">Typez is in App Store review. Join the waitlist and we’ll invite you to try it on TestFlight.</p>
             <form
               id="waitlist-form"
               method="post"
@@ -54,13 +60,13 @@
               <label class="visually-hidden" for="waitlist-email">Email address</label>
               <div class="waitlist-fields">
                 <input id="waitlist-email" name="EMAIL" type="email" autocomplete="email" placeholder="Your email address" required />
-                <button class="primary-button" type="submit">Notify me at launch</button>
+                <button class="primary-button" type="submit">Join the waitlist</button>
               </div>
               <input class="visually-hidden" type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" />
               <input type="hidden" name="locale" value="en" />
               <p class="waitlist-status" id="waitlist-status" role="status" aria-live="polite" aria-atomic="true"></p>
             </form>
-            <p class="waitlist-note" id="waitlist-note">Launch updates only. Unsubscribe anytime. <a href="privacy.html">Privacy policy</a>.</p>
+            <p class="waitlist-note" id="waitlist-note">TestFlight invitations and launch updates only. Unsubscribe anytime. <a href="privacy.html">Privacy policy</a>.</p>
           </div>
           <div class="hero-actions">
             <a class="text-link dark-link" href="#clipboard">See how it works <span>↓</span></a>
@@ -106,6 +112,7 @@
               <li>Import on demand</li>
               <li>Insert with one tap</li>
             </ul>
+            <p><a href="/guides/iphone-clipboard-history/">Does iPhone have clipboard history? Read the guide →</a></p>
           </div>
 
           <figure class="clipboard-media">
@@ -170,8 +177,9 @@
       </section>
 
       <section class="final-cta shell">
-        <p class="eyebrow">Coming soon to iPhone</p>
+        <p class="eyebrow">Try Typez on TestFlight</p>
         <h2>Make your next edit<br />the easy one.</h2>
+        <p class="hero-text">Join the waitlist for a TestFlight invitation and an update when Typez launches.</p>
         <a class="primary-button final-download" href="#waitlist">Join the waitlist</a>
       </section>
     </main>
@@ -181,6 +189,7 @@
         <img class="brand-logo" src="assets/typez-logo.png" width="450" height="165" alt="Typez" />
       </div>
       <div class="footer-links">
+        <a href="/guides/">Guides</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="/support">Support</a>

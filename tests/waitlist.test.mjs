@@ -6,7 +6,7 @@ import { runInNewContext } from "node:vm";
 const script = readFileSync(new URL("../waitlist.js", import.meta.url), "utf8");
 
 function setup(fetch) {
-  const button = { disabled: false, textContent: "Notify me at launch" };
+  const button = { disabled: false, textContent: "Join the waitlist" };
   const status = { textContent: "", dataset: {} };
   const form = {
     action: "https://example.sibforms.com/serve/test",
@@ -40,6 +40,7 @@ test("posts to Brevo and announces success only after confirmation", async () =>
   finish({ ok: true, json: async () => ({ success: true }) });
   await pending;
   assert.match(page.status.textContent, /You're on the list/);
+  assert.match(page.status.textContent, /TestFlight invitation/);
   assert.equal(page.form.email, "");
   assert.equal(page.button.disabled, false);
 });
@@ -59,6 +60,6 @@ test("failed, rejected, malformed, and timed-out requests keep the email for ret
     assert.match(page.status.textContent, /couldn't save/);
     assert.equal(page.form.email, "test@example.com");
     assert.equal(page.button.disabled, false);
-    assert.equal(page.button.textContent, "Notify me at launch");
+    assert.equal(page.button.textContent, "Join the waitlist");
   }
 });

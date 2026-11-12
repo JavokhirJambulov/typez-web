@@ -1,6 +1,42 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.typez.app"
+        }
+      ],
+      "destination": "https://typez.app/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/support.html",
+      "destination": "/support",
+      "permanent": true
+    },
+    {
+      "source": "/guides/index.html",
+      "destination": "/guides/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/:slug/index.html",
+      "destination": "/guides/:slug/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/support", "destination": "/support.html" }
+    {
+      "source": "/support",
+      "destination": "/support.html"
+    }
   ]
 }

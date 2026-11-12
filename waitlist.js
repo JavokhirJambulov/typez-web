@@ -22,12 +22,12 @@ form.addEventListener("submit", async (event) => {
     if (!response.ok || result.success !== true) throw new Error("Signup failed");
 
     form.reset();
-    status.textContent = "You're on the list! We'll email you when Typez launches.";
+    status.textContent = "You're on the list! We'll email your TestFlight invitation and launch updates.";
   } catch {
     status.dataset.error = "true";
     status.textContent = "We couldn't save your email. Please try again, or contact support@typez.app.";
   } finally {
     button.disabled = false;
-    button.textContent = "Notify me at launch";
+    button.textContent = "Join the waitlist";
   }
 });

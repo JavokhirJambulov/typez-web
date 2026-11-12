@@ -10,7 +10,10 @@ Minimal static website for the Typez iPhone keyboard.
 - `support.html` — support contact and keyboard/purchase help
 - `styles.css` — shared styling for all pages
 - `waitlist.js` — email-only Brevo waitlist submission and feedback
-- `vercel.json` — serves `/support` from `support.html`
+- `guides/` — static guide index and articles
+- `guides.css` — guide layouts, loaded only on guide pages
+- `robots.txt` and `sitemap.xml` — crawl guidance and canonical page list
+- `vercel.json` — serves `/support` and redirects duplicate domain/page URLs
 
 There is no framework, package manager, JavaScript bundle, or build step.
 
@@ -31,6 +34,21 @@ flow, regenerate the embed and update this integration to match.
 Run the submission checks with `node --test tests/waitlist.test.mjs`. Before
 publishing, submit an address you own through the local page, verify the success
 message, and find that contact in **Typez Launch List** in Brevo.
+
+While the app is in App Store review, the waitlist offers TestFlight invitations
+and launch updates. The form only adds contacts to Brevo: it does **not** enroll
+testers or send TestFlight invitations automatically. Invite opted-in contacts
+through App Store Connect and manage unsubscribes before sending updates.
+
+## Guides and search
+
+Run all checks with `node --test tests/*.test.mjs`. The search checks validate
+canonical/sitemap coverage, local links and assets, fragments, and article data.
+There is still no build step. Python serves the `/guides/` directories directly;
+Vercel applies the host and legacy-page redirects after deployment.
+
+See [the search pilot](docs/search-pilot.md) for the baseline, publishing checklist,
+production checks, and how to evaluate the first post.
 
 ## Privacy policy source of truth
 
@@ -72,7 +90,7 @@ Connect Support URL. Keep `support@typez.app` routing active and monitored.
 
 - Connect the final Typez domain.
 - Replace the waitlist form and waitlist links with the final Typez App Store listing URL once the app is available.
-- Add the canonical URL and social-sharing image after the final domain is chosen.
+- Keep `https://typez.app` as the canonical domain and update the sitemap when adding pages.
 - Review the privacy policy and terms whenever the app's data practices change.
 - Configure and document the production Amplitude retention period before release.
 - Keep `support@typez.app` routing active and monitored.
