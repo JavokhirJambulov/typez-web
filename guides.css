@@ -30,6 +30,7 @@
 .guide-sources { font-size: 16px; color: var(--muted); }
 .guides-header { padding-block: 18px 36px; }
 .guide-card h2 { margin: 12px 0 18px; font-size: 28px; line-height: 1.2; letter-spacing: -0.025em; }
+.guide-card + .guide-card { margin-top: 24px; }
 .guide-card p { line-height: 1.65; }
 .guide-card-date { color: var(--muted); font-size: 14px; }
 .guide-card-link { font-weight: 650; }
