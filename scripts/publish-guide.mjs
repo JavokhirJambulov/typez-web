@@ -86,7 +86,13 @@ export function renderArticle(article, date, original) {
 
 export function publishNext(root, today = seoulDate()) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(today) || Number.isNaN(Date.parse(today))) throw new Error("Invalid publication date");
-  if (![1, 3, 5].includes(new Date(`${today}T12:00:00Z`).getUTCDay())) return { published: false, reason: "Not a Monday, Wednesday, or Friday in Seoul" };
+  const publishingDays = [0, 1, 3, 5]; // Sunday, Monday, Wednesday, Friday
+  if (!publishingDays.includes(new Date(`${today}T12:00:00Z`).getUTCDay())) {
+    return {
+      published: false,
+      reason: "Not a Monday, Wednesday, Friday, or Sunday in Seoul",
+    };
+  }
   const queuePath = join(root, ".publishing/queue.json");
   const queue = JSON.parse(readFileSync(queuePath, "utf8"));
   if (queue.articles.some((a) => a.publishedOn === today)) return { published: false, reason: "Already published a queued guide today" };
