@@ -1,6 +1,6 @@
 {
   "timezone": "Asia/Seoul",
-  "schedule": "Monday, Wednesday, Friday at 10:00",
+  "schedule": "Monday, Wednesday, Friday, Sunday at 10:00",
   "articles": [
     {
       "slug": "iphone-keyboard-number-row",
@@ -169,6 +169,537 @@
         ]
       ],
       "publishedOn": "2026-11-18"
+    },
+    {
+      "slug": "move-cursor-precisely-iphone",
+      "scheduledFor": "2026-11-25",
+      "title": "How to Move the Cursor Precisely on iPhone",
+      "description": "Move the iPhone cursor between letters using the spacebar trackpad, direct touch, or a keyboard with arrow keys. Learn which method works best for small edits.",
+      "category": "Cursor control",
+      "deck": "Fix a typo in the middle of a word without deleting everything after it.",
+      "answer": "Touch and hold the spacebar on Apple’s iPhone keyboard until the keys go blank. Drag to move the cursor, then release. You can also drag the insertion point directly in the text. If you prefer arrow keys, Typez lets you move one character or one word at a time.",
+      "sections": [
+        [
+          "spacebar-trackpad",
+          "Move the cursor with the spacebar",
+          "<p>Trying to tap between two letters often places the cursor at the wrong end of a word. The built-in trackpad is usually a better starting point.</p><ol><li>Tap the text you want to edit so the keyboard appears.</li><li>Press and hold the spacebar until the key labels disappear.</li><li>Without lifting your finger, slide it in the direction you want the cursor to move.</li><li>Release when the cursor reaches the correct position.</li></ol><p>Try it in Notes with a long sentence. Move slowly when you are close to the letter you want to correct.</p>"
+        ],
+        [
+          "direct-placement",
+          "Place the cursor between two letters",
+          "<p>You can also touch and hold the insertion point in editable text, then drag it to the correct spot. A magnified view can help you see the letters while your finger is over them.</p><p>For example, if you typed <strong>recieve</strong>, position the cursor near the incorrect letters and make the correction. If the entire word is wrong, double-tap it and replace it instead.</p>"
+        ],
+        [
+          "character-word-controls",
+          "Use arrow keys for precise cursor movement",
+          "<p>Apple’s standard iPhone letter keyboard does not have a dedicated row of cursor arrow keys. Typez takes a different approach: you can move left or right by one character, move by whole words, or hold a control to keep moving.</p><p>Character controls are useful for punctuation, typos, URLs and codes. Word controls help you move across a longer sentence without dragging the cursor the entire distance.</p><figure class=\"guide-figure\"><video class=\"demo-video\" controls playsinline preload=\"metadata\" poster=\"/assets/typez-feature-demo-poster.jpg\" aria-label=\"Typez keyboard demonstration\"><source src=\"/assets/typez-feature-demo.mp4\" type=\"video/mp4\" />Your browser does not support embedded video.</video><figcaption>See the actual Typez keyboard and its cursor controls in action.</figcaption></figure><p>For another look at Typez, see <a href=\"https://x.com/JavokhirJS/status/2081742329099206940\" target=\"_blank\" rel=\"noopener noreferrer\">my original keyboard demo on X (Twitter)</a>. These are product demonstrations, not controlled speed tests.</p>"
+        ],
+        [
+          "choose-the-edit",
+          "Try these three everyday edits",
+          "<ul><li><strong>Missing punctuation:</strong> change 630 to 6:30 by inserting the colon in the middle.</li><li><strong>Wrong character in a link:</strong> move to the specific character instead of deleting the rest of the URL.</li><li><strong>Wrong date:</strong> navigate to the date and replace only the part that needs changing.</li></ul><p>For isolated edits, the spacebar gesture may be all you need. If you make small corrections repeatedly, dedicated cursor buttons are worth trying.</p>"
+        ],
+        [
+          "when-it-does-not-work",
+          "Why is the iPhone cursor difficult to move?",
+          "<p>If direct tapping keeps selecting a word or moving to its edge, try the spacebar gesture instead. If a third-party keyboard is missing, test it in Notes; password fields and some other fields require Apple’s keyboard.</p><p>Typez offers character and word controls without requiring Full Access. Visit the <a href=\"/\">Typez homepage</a> to check availability and join the waitlist for TestFlight.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Type with the onscreen keyboard",
+          "https://support.apple.com/guide/iphone/type-with-the-onscreen-keyboard-iph3c50f96e/ios"
+        ],
+        [
+          "Apple: Select, edit, and move text",
+          "https://support.apple.com/guide/iphone/select-edit-and-move-text-iph1a9cae52c/ios"
+        ],
+        [
+          "Typez product demo",
+          "/"
+        ],
+        [
+          "Original Typez demo on X",
+          "https://x.com/JavokhirJS/status/2081742329099206940"
+        ]
+      ]
+    },
+    {
+      "slug": "save-replies-iphone",
+      "scheduledFor": "2026-11-27",
+      "title": "How to Save Frequently Used Text and Phrases on iPhone",
+      "description": "Save frequently used phrases, addresses, email templates and links on iPhone with Text Replacement, Notes or a clipboard keyboard.",
+      "category": "Saved replies",
+      "deck": "Stop typing the same addresses, links and replies over and over.",
+      "answer": "Use iPhone Text Replacement for short phrases you can trigger with a shortcut. For longer templates, keep them in Notes. If you want to browse and insert saved text directly from the keyboard, use a saved-text keyboard such as Typez.",
+      "sections": [
+        [
+          "choose-reusable-text",
+          "What text should you save?",
+          "<p>Start with text you type or paste several times a week: your email address, business address, appointment link, a standard reply, or a message template.</p><p>Keep the reusable part separate from names, dates and other details that change. Do not store passwords, verification codes or private customer information in general-purpose templates.</p>"
+        ],
+        [
+          "text-replacement",
+          "Use iPhone Text Replacement for quick shortcuts",
+          "<ol><li>Open <strong>Settings → General → Keyboard → Text Replacement</strong>.</li><li>Tap <strong>+</strong>.</li><li>Enter the text you want to reuse in <strong>Phrase</strong>.</li><li>Enter an abbreviation in <strong>Shortcut</strong> and tap Save.</li><li>Try the abbreviation with Apple’s keyboard in Notes.</li></ol><p>For example, use <strong>zzmail</strong> for your email address or <strong>zzbook</strong> for an appointment link. A distinctive prefix helps prevent accidental expansion while typing ordinary words.</p>"
+        ],
+        [
+          "practical-templates",
+          "Examples of reusable phrases and replies",
+          "<ul><li><strong>Email:</strong> your business email address.</li><li><strong>Booking:</strong> “You can choose a time here: [link].”</li><li><strong>Support:</strong> “Could you send your reference number and a short description of the problem?”</li><li><strong>Availability:</strong> “We’re available [days] from [hours].”</li><li><strong>Address:</strong> your office or delivery address.</li></ul><p>Replace placeholders and read the message before sending it.</p>"
+        ],
+        [
+          "notes-and-typez",
+          "Compare Text Replacement, Notes and a clipboard keyboard",
+          "<div style=\"overflow-x:auto\"><table><thead><tr><th scope=\"col\">Method</th><th scope=\"col\">Best for</th><th scope=\"col\">Trade-off</th></tr></thead><tbody><tr><th scope=\"row\">Text Replacement</th><td>Short phrases and email addresses</td><td>Remember a shortcut for each phrase</td></tr><tr><th scope=\"row\">Notes</th><td>Long templates and organized reference text</td><td>Switch apps and copy the text</td></tr><tr><th scope=\"row\">Typez</th><td>Browsing pinned replies, links and addresses inside the keyboard</td><td>Requires setup; clipboard requires Full Access</td></tr></tbody></table></div><p>If you prefer seeing a list rather than remembering abbreviations, Typez lets you copy a phrase, import it into the clipboard, pin it and insert it from the keyboard the next time you need it.</p><figure class=\"guide-figure\"><img src=\"/assets/typez-clipboard.jpg\" width=\"1000\" height=\"730\" loading=\"lazy\" decoding=\"async\" alt=\"Typez clipboard with a pinned address and saved text ready to insert\" /><figcaption>Saved text and pinned items in the Typez keyboard.</figcaption></figure><p>Items are saved on your device after you deliberately import them. Read the <a href=\"/guides/iphone-keyboard-full-access/\">Full Access guide</a> before enabling the clipboard feature.</p>"
+        ],
+        [
+          "review-before-sending",
+          "Can you save multiple copied texts on iPhone?",
+          "<p>Apple’s normal Paste action uses the current clipboard item, not a browsable history of previous copies. If you want to keep multiple texts for later, save each one deliberately using Notes or a clipboard keyboard.</p><p>See our guide to <a href=\"/guides/iphone-clipboard-history/\">iPhone clipboard history</a> for the distinction between copying and saving. Keep a separate backup of important templates, since deleting Typez can remove its locally stored items.</p><p>Want your favorite phrases available while typing? <a href=\"/\">See the Typez clipboard and check availability.</a></p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Use Text Replacement on iPhone",
+          "https://support.apple.com/guide/iphone/use-shorthand-for-frequently-used-text-iph6d01d862/ios"
+        ],
+        [
+          "Typez product features",
+          "/"
+        ],
+        [
+          "Typez support",
+          "/support"
+        ],
+        [
+          "Typez privacy policy",
+          "/privacy.html"
+        ]
+      ]
+    },
+    {
+      "slug": "select-edit-text-iphone",
+      "scheduledFor": "2026-11-29",
+      "title": "How to Select, Highlight, and Edit Text on iPhone",
+      "description": "Learn to select a word or paragraph on iPhone, drag selection handles, highlight a precise range with the keyboard trackpad, and replace or copy text.",
+      "category": "Text editing",
+      "deck": "Select exactly the text you need and leave the rest untouched.",
+      "answer": "Double-tap a word in an editable text field to select it. Drag the selection handles to change the highlighted range, then type, cut or paste as needed. To select text with the keyboard, hold the spacebar and use a second finger while moving the first.",
+      "sections": [
+        [
+          "cursor-or-selection",
+          "Moving the cursor vs selecting text",
+          "<p>The cursor marks where new characters will go. Selected text is the range you can copy, cut or replace. For a missing letter, move the cursor; for a wrong word, select it.</p><p>See our <a href=\"/guides/move-cursor-precisely-iphone/\">precise iPhone cursor guide</a> if you only need to move the insertion point.</p>"
+        ],
+        [
+          "select-a-word",
+          "How to highlight a word or paragraph",
+          "<ol><li>Open an editable note or message.</li><li>Double-tap a word to select it.</li><li>Drag the handles at either end to adjust the highlighted range.</li><li>Check the selected text before applying an editing command.</li></ol><p>In supported fields, triple-tapping selects a paragraph. For a long passage, start with one word and extend the handles. Highlighting here means selecting text for editing, not applying a colored highlight in a document.</p>"
+        ],
+        [
+          "trackpad-selection",
+          "Select text with the spacebar trackpad",
+          "<p>If the handles are difficult to drag precisely, Apple’s keyboard also supports trackpad selection:</p><ol><li>Hold the spacebar until the keyboard switches to trackpad mode.</li><li>Keep the first finger on the keyboard and touch it with a second finger.</li><li>Move the first finger to extend or reduce the selection.</li><li>Release when the desired text is selected.</li></ol><p>Practice in Notes first. Some custom editors use different selection controls.</p>"
+        ],
+        [
+          "replace-selected-text",
+          "Replace a word without deleting the whole sentence",
+          "<p>Imagine you wrote “Please send the form on Tuesday.” Double-tap Tuesday and type Friday. The rest of the sentence stays intact.</p><p>When text is selected, typing or pasting usually replaces it. Check that the selection has not swallowed surrounding spaces or punctuation.</p>"
+        ],
+        [
+          "copy-cut-paste",
+          "How to copy, cut or paste selected text",
+          "<ul><li><strong>Copy:</strong> keeps the original text and places a copy on the clipboard.</li><li><strong>Cut:</strong> removes the selected editable text and places it on the clipboard.</li><li><strong>Paste:</strong> inserts the current copied item, replacing highlighted text if there is a selection.</li></ul><p>Look for additional commands in the editing menu if you cannot see the one you want.</p>"
+        ],
+        [
+          "keyboard-and-app-limits",
+          "What a keyboard can and cannot do",
+          "<p>Selection handles and editing menus are provided by the app’s text editor. Typez’s cursor buttons help position the cursor, but they do not replace the host app’s selection tools.</p><p>If you frequently correct individual letters or reuse copied phrases, explore the <a href=\"/guides/move-cursor-precisely-iphone/\">cursor controls</a> and <a href=\"/guides/iphone-clipboard-history/\">clipboard guide</a>.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Select, edit, and move text",
+          "https://support.apple.com/guide/iphone/select-edit-and-move-text-iph1a9cae52c/ios"
+        ],
+        [
+          "Apple: Type with the onscreen keyboard",
+          "https://support.apple.com/guide/iphone/type-with-the-onscreen-keyboard-iph3c50f96e/ios"
+        ],
+        [
+          "Typez product features",
+          "/"
+        ]
+      ]
+    },
+    {
+      "slug": "undo-typing-deletion-iphone",
+      "scheduledFor": "2026-11-30",
+      "title": "How to Undo Typing and Accidental Text Deletion on iPhone",
+      "description": "Undo typing on iPhone with three-finger gestures, Shake to Undo or app controls. Learn what can be restored after accidentally deleting text.",
+      "category": "Editing mistakes",
+      "deck": "Deleted part of a message? Try undo before you make another edit.",
+      "answer": "In a supported iPhone text editor, swipe left with three fingers and confirm Undo if prompted. Swipe right to redo. You can also use an app’s undo button or Shake to Undo when enabled. This restores recent edits only when the editor still has the relevant history.",
+      "sections": [
+        [
+          "try-undo-first",
+          "What to do immediately after deleting text",
+          "<p>Keep the affected note, message draft or text field open. Avoid typing more or closing the app until you have tried its undo controls.</p><p>If the app has an undo button, start there. If you deleted an entire note or message rather than editing its contents, look for that app’s recovery tools instead.</p>"
+        ],
+        [
+          "three-finger-gestures",
+          "Undo typing without shaking your iPhone",
+          "<ol><li>Keep the editable text field active.</li><li>Swipe left using three fingers, then tap Undo if the control appears.</li><li>Check whether the missing text has returned.</li><li>To reverse an undo, try swiping right with three fingers and use Redo if prompted.</li></ol><p>A three-finger tap can also bring up editing controls in supported apps. Use the visible undo or redo command if it appears.</p>"
+        ],
+        [
+          "shake-to-undo",
+          "How to enable Shake to Undo",
+          "<ol><li>Open <strong>Settings → Accessibility → Touch</strong>.</li><li>Turn on <strong>Shake to Undo</strong>.</li><li>Return to the text you were editing and gently shake the iPhone.</li><li>Confirm Undo if the prompt appears.</li></ol><p>If you trigger it accidentally, turn it off in the same settings screen and use editing gestures instead.</p>"
+        ],
+        [
+          "know-the-limits",
+          "Can you recover accidentally deleted text?",
+          "<p>Undo may restore a deleted sentence or reverse a paste if the editing session still holds that action. It cannot guarantee recovery after closing a document, restarting an app or deleting the entire item.</p><ul><li><strong>Deleted notes or files:</strong> look for the relevant Recently Deleted or recovery folder.</li><li><strong>Sent messages:</strong> check the messaging app’s edit or unsend options.</li><li><strong>Overwritten clipboard:</strong> undo does not provide a system-wide history of copied items.</li></ul>"
+        ],
+        [
+          "protect-reusable-text",
+          "Avoid losing important text again",
+          "<p>For long drafts, keep a separate copy before making large changes. For phrases you reuse, save them intentionally rather than relying on the clipboard or undo history.</p><p>See <a href=\"/guides/select-edit-text-iphone/\">how to select and edit text safely</a> and our explanation of <a href=\"/guides/iphone-clipboard-history/\">what iPhone clipboard history can and cannot recover</a>.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Select, edit, and move text",
+          "https://support.apple.com/guide/iphone/select-edit-and-move-text-iph1a9cae52c/ios"
+        ],
+        [
+          "Apple: Adjust how iPhone responds to your touch",
+          "https://support.apple.com/guide/iphone/adjust-how-iphone-responds-to-your-touch-iph77bcdd132/ios"
+        ]
+      ]
+    },
+    {
+      "slug": "switch-iphone-keyboards",
+      "scheduledFor": "2026-12-02",
+      "title": "How to Change, Switch, and Reorder Keyboards on iPhone",
+      "description": "Add a language or third-party keyboard on iPhone, switch using the globe key, change keyboard order and remove unused keyboards.",
+      "category": "Keyboard setup",
+      "deck": "Choose the keyboard you want without cycling through every layout.",
+      "answer": "Hold the globe key while typing and select a keyboard from the menu. To add, remove or reorder keyboards, open Settings → General → Keyboard → Keyboards. Installing a third-party keyboard app alone does not enable it.",
+      "sections": [
+        [
+          "add-a-keyboard",
+          "How to add a new keyboard on iPhone",
+          "<ol><li>For a third-party keyboard, install its app first.</li><li>Go to <strong>Settings → General → Keyboard → Keyboards</strong>.</li><li>Tap <strong>Add New Keyboard</strong>.</li><li>Choose the language layout or installed keyboard you want.</li></ol><p>Adding another Apple language keyboard does not add that language to every third-party keyboard. Check the keyboard app’s supported languages separately.</p>"
+        ],
+        [
+          "switch-with-globe",
+          "How to switch keyboards using the globe key",
+          "<p>Open a message or note, then touch and hold the globe or emoji switching control. Select the keyboard by name. A short tap can cycle to the next keyboard; holding the key is useful when several are enabled.</p><p>If the keyboard is missing, go back to Settings and make sure it was added.</p>"
+        ],
+        [
+          "change-order",
+          "How to change the order of iPhone keyboards",
+          "<ol><li>Open <strong>Settings → General → Keyboard → Keyboards</strong>.</li><li>Tap <strong>Edit</strong>.</li><li>Use the reorder handle to move your preferred keyboards higher in the list.</li><li>Tap <strong>Done</strong>.</li></ol><p>This changes the list order, not a system-wide rule that forces one keyboard to stay active in every app.</p>"
+        ],
+        [
+          "remove-keyboard",
+          "Remove keyboards you do not use",
+          "<p>In the same keyboard list, tap Edit and use the remove control beside the unwanted layout. Removing the enabled keyboard is different from uninstalling its app.</p><p>Before uninstalling a third-party keyboard, back up anything important that the app stores locally, such as saved text.</p>"
+        ],
+        [
+          "why-it-switches",
+          "Why does iPhone keep going back to Apple’s keyboard?",
+          "<p>iOS can require its own keyboard in protected fields, certain phone-number fields, and apps that disable custom keyboards. Keyboard order and Full Access do not override those restrictions.</p><p>If your keyboard disappears in an ordinary text field, follow our <a href=\"/guides/iphone-keeps-switching-keyboards/\">keyboard switching troubleshooting guide</a>.</p>"
+        ],
+        [
+          "using-typez",
+          "How to switch to Typez",
+          "<p>Once Typez is installed and enabled, select it from the globe menu just like another keyboard. It offers cursor controls, a number row and a saved-text clipboard.</p><p>See <a href=\"/support\">setup instructions</a> and the <a href=\"/guides/iphone-keyboard-full-access/\">Full Access guide</a> if you plan to enable clipboard functionality.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Add or change keyboards on iPhone",
+          "https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios"
+        ],
+        [
+          "Apple developer documentation: Custom keyboards",
+          "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/CustomKeyboard.html"
+        ],
+        [
+          "Typez support",
+          "/support"
+        ]
+      ]
+    },
+    {
+      "slug": "type-numbers-symbols-faster-iphone",
+      "scheduledFor": "2026-12-04",
+      "title": "How to Type Numbers and Symbols on iPhone Without Switching Keyboards",
+      "description": "Use the iPhone 123-key slide gesture, hidden symbols, long-press shortcuts and punctuation tricks to enter characters without repeatedly changing layouts.",
+      "category": "Typing shortcuts",
+      "deck": "Enter an occasional number or symbol and return straight to typing letters.",
+      "answer": "On Apple’s standard iPhone keyboard, touch and hold the 123 key, slide to a number or punctuation mark, and release. The letter layout returns automatically. For hidden symbols, hold the related key and slide to the character you need.",
+      "sections": [
+        [
+          "find-the-layout",
+          "Type a number with the 123-key slide gesture",
+          "<ol><li>Start on the standard English letter keyboard.</li><li>Touch and hold <strong>123</strong> without lifting your finger.</li><li>Slide to the digit or common punctuation mark you need.</li><li>Release to insert it and return to the letter layout.</li></ol><p>For example, try typing “Room 7B” using the gesture for the 7. For several consecutive digits, opening the number layout normally may be easier.</p>"
+        ],
+        [
+          "hold-for-alternatives",
+          "Find hidden symbols and special characters",
+          "<p>Hold a related key to see its available variants. Then slide to the character you want before releasing.</p><ul><li>Hold <strong>0</strong> for the degree symbol (°).</li><li>Hold a currency symbol to find additional currencies.</li><li>Hold a letter such as <strong>e</strong> for accented versions.</li><li>Open <strong>#+=</strong> for additional symbols not visible on the first number layout.</li></ul><p>The exact long-press choices depend on the keyboard language.</p>"
+        ],
+        [
+          "capitals-and-periods",
+          "Use shortcuts for capitals and punctuation",
+          "<p>For a single uppercase letter, hold Shift, slide to the letter and release. Double-tap Shift for Caps Lock if you need a longer uppercase sequence.</p><p>To insert a period followed by a space, double-tap the spacebar with the period shortcut enabled. You can check that option under <strong>Settings → General → Keyboard</strong>.</p>"
+        ],
+        [
+          "repeat-strings",
+          "Use shortcuts for strings you type repeatedly",
+          "<p>For a frequently entered address, URL or reference phrase, saving the entire string can be faster than entering each character individually. Apple’s Text Replacement and saved-text keyboards provide different ways to do this.</p><p>See <a href=\"/guides/save-replies-iphone/\">how to save frequently used text on iPhone</a> for practical examples.</p>"
+        ],
+        [
+          "typez-fit",
+          "When a permanent number row makes more sense",
+          "<p>The 123-key trick helps with occasional digits, but it still requires a gesture. If you frequently type mixed text such as dates, addresses or product codes, Typez keeps a number row above the letters.</p><p>Read our separate guide to <a href=\"/guides/iphone-keyboard-number-row/\">getting a permanent iPhone keyboard number row</a> for keyboard options. That is a different solution from learning the built-in gestures.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Type with the onscreen keyboard",
+          "https://support.apple.com/guide/iphone/type-with-the-onscreen-keyboard-iph3c50f96e/ios"
+        ],
+        [
+          "iPhone Life: iPhone typing tricks",
+          "https://www.iphonelife.com/content/iphone-texting-tricks"
+        ],
+        [
+          "Apple: Use Text Replacement",
+          "https://support.apple.com/guide/iphone/use-shorthand-for-frequently-used-text-iph6d01d862/ios"
+        ],
+        [
+          "Typez product features",
+          "/"
+        ]
+      ]
+    },
+    {
+      "slug": "iphone-keyboard-sound-haptics",
+      "scheduledFor": "2026-12-06",
+      "title": "How to Turn On or Off iPhone Keyboard Sound and Vibration",
+      "description": "Change iPhone keyboard clicks and haptic feedback, turn either off, and fix keyboard sound or vibration that is not working.",
+      "category": "Keyboard settings",
+      "deck": "Make typing quieter or enable a subtle vibration with each keypress.",
+      "answer": "Open Settings → Sounds & Haptics → Keyboard Feedback. Turn Sound on or off for keyboard clicks, and Haptic on or off for keypress vibration. These are separate switches for Apple’s keyboard.",
+      "sections": [
+        [
+          "change-settings",
+          "How to change iPhone keyboard sound and vibration",
+          "<ol><li>Open <strong>Settings</strong>.</li><li>Tap <strong>Sounds & Haptics</strong>.</li><li>Choose <strong>Keyboard Feedback</strong>.</li><li>Toggle <strong>Sound</strong> for clicks or <strong>Haptic</strong> for vibration.</li><li>Open Notes to test the result.</li></ol><p>For silent typing with a physical response, turn Sound off and Haptic on. For no keyboard feedback at all, turn both off.</p>"
+        ],
+        [
+          "no-keyboard-sound",
+          "iPhone keyboard sound not working?",
+          "<p>Check that Sound is enabled under Keyboard Feedback. Then check Silent mode and your sound settings. Test Apple’s keyboard in an ordinary note to separate system settings from an app-specific problem.</p><p>If you are using a third-party keyboard, look for its own sound setting.</p>"
+        ],
+        [
+          "no-keyboard-haptics",
+          "iPhone keyboard vibration not working?",
+          "<ol><li>Make sure Haptic is enabled under Keyboard Feedback.</li><li>Open <strong>Settings → Accessibility → Touch</strong>.</li><li>Check whether <strong>Vibration</strong> is turned on.</li><li>Test typing again in Notes.</li></ol><p>The accessibility vibration switch affects more than keyboard feedback, so consider that before changing it.</p>"
+        ],
+        [
+          "sound-vs-haptics",
+          "Does keyboard vibration affect battery life?",
+          "<p>Apple notes that keyboard haptics may affect battery life. It does not specify a fixed percentage. If you do not find the feedback useful, turning it off is a reasonable choice.</p>"
+        ],
+        [
+          "third-party-keyboards",
+          "Why feedback can differ on a third-party keyboard",
+          "<p>Custom keyboards can provide their own sound and vibration preferences. Typez includes keyboard feedback customization alongside theme and font options. Check the settings in your installed version rather than assuming the Apple keyboard toggles apply to it.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Change iPhone keyboard sounds or haptics",
+          "https://support.apple.com/en-us/102463"
+        ],
+        [
+          "Typez product features",
+          "/"
+        ]
+      ]
+    },
+    {
+      "slug": "apple-keyboard-vs-typez",
+      "scheduledFor": "2026-12-07",
+      "title": "Apple Keyboard vs Third-Party Keyboards: What’s the Difference?",
+      "description": "Compare Apple’s built-in iPhone keyboard with third-party keyboards for cursor control, clipboard features, number rows, autocorrection, privacy and compatibility.",
+      "category": "Keyboard comparisons",
+      "deck": "Find out when the built-in keyboard is enough and when an alternative makes sense.",
+      "answer": "Apple’s keyboard is built into iOS and offers familiar typing tools, autocorrection and a spacebar trackpad. Third-party keyboards can add features such as cursor arrows, saved text, different layouts or more customization. They also have separate permissions and cannot replace Apple’s keyboard in every field.",
+      "sections": [
+        [
+          "comparison-method",
+          "What changes when you install a third-party keyboard?",
+          "<p>A third-party keyboard is an alternative typing interface that you install and enable on your iPhone. It can change the layout and offer additional tools within the keyboard area, but it does not take control of every text field or system feature.</p><p>This guide is written by the developer of Typez. It explains feature differences rather than ranking keyboards by measured typing speed or accuracy.</p>"
+        ],
+        [
+          "feature-comparison",
+          "Apple keyboard vs third-party keyboard features",
+          "<div style=\"overflow-x:auto\"><table><thead><tr><th scope=\"col\">Feature</th><th scope=\"col\">Apple keyboard</th><th scope=\"col\">Third-party keyboards</th></tr></thead><tbody><tr><th scope=\"row\">Cursor movement</th><td>Spacebar trackpad and text editing controls</td><td>May offer dedicated cursor buttons or other gestures</td></tr><tr><th scope=\"row\">Saved text</th><td>Text Replacement and current clipboard</td><td>Some offer browsable saved text or clipboard tools</td></tr><tr><th scope=\"row\">Number entry</th><td>Separate number layout on standard English keyboard</td><td>Some offer a permanent number row</td></tr><tr><th scope=\"row\">Autocorrection and predictions</th><td>Built-in, depending on language and settings</td><td>Varies by app and language</td></tr><tr><th scope=\"row\">Swipe typing</th><td>QuickPath on supported languages</td><td>Available in some apps</td></tr><tr><th scope=\"row\">Customization</th><td>System keyboard settings and supported layouts</td><td>May offer themes, fonts and feedback settings</td></tr><tr><th scope=\"row\">Privacy</th><td>Built into iOS</td><td>Review app privacy policy and optional Full Access</td></tr><tr><th scope=\"row\">Compatibility</th><td>System keyboard</td><td>Can be unavailable in protected fields</td></tr></tbody></table></div><p>These are categories of possible features, not capabilities guaranteed by every third-party keyboard.</p>"
+        ],
+        [
+          "cursor-movement",
+          "Cursor control and saved text: where alternatives help",
+          "<p>Apple’s spacebar trackpad works well for occasional corrections. If you regularly edit a URL, code or small typo, Typez offers explicit character and word controls instead. See the <a href=\"https://x.com/JavokhirJS/status/2081742329099206940\" target=\"_blank\" rel=\"noopener noreferrer\">original Typez demo</a> or the <a href=\"/guides/move-cursor-precisely-iphone/\">cursor navigation guide</a>.</p><p>Apple’s Text Replacement is useful for shortcuts. Typez instead lets you deliberately import and pin text to reuse from a visible list inside the keyboard. Other third-party keyboards, including SwiftKey, also offer saved-text features.</p><figure class=\"guide-figure\"><img src=\"/assets/typez-clipboard.jpg\" width=\"1000\" height=\"730\" loading=\"lazy\" decoding=\"async\" alt=\"Typez clipboard with a pinned address and saved text ready to insert\" /><figcaption>Saved text and pinned items in the Typez keyboard.</figcaption></figure>"
+        ],
+        [
+          "numbers-and-layout",
+          "Typing features and customization",
+          "<p>If your priority is predictions and autocorrection, choose a keyboard that supports them in your language. Typez currently does not support autocorrection; its focus is editing, a permanent number row, saved text and customization.</p><p>For number-heavy typing, see our <a href=\"/guides/iphone-keyboard-number-row/\">number-row guide</a>. If you often type in several languages, check each keyboard’s current language coverage before installing it.</p>"
+        ],
+        [
+          "permissions-and-integration",
+          "Are third-party iPhone keyboards safe to use?",
+          "<p>Review each developer’s privacy policy, especially how it handles typed text and any network or analytics access. Full Access expands a keyboard extension’s permissions; the warning alone does not establish what a particular developer collects.</p><p>Typez’s core typing and cursor controls work without Full Access. Its optional clipboard requires it. The policy states that typing and clipboard contents are not uploaded or used in analytics; saved items stay local. Read the <a href=\"/privacy.html\">privacy policy</a> and the <a href=\"/guides/iphone-keyboard-full-access/\">Full Access explanation</a>.</p><p>iOS can still display Apple’s keyboard in secure fields or apps that reject custom keyboards.</p>"
+        ],
+        [
+          "choose-your-workflow",
+          "Is a third-party keyboard worth it?",
+          "<p>Keep Apple’s keyboard if it already meets your needs. Try an alternative if a specific daily task is frustrating: swipe typing, suggestions, entering numbers, editing text or inserting repeated phrases.</p><p>You can keep multiple keyboards enabled and choose the one that suits the task. <a href=\"/\">Explore Typez and check its current availability</a> if precise editing and saved text are your priorities.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Type with the onscreen keyboard",
+          "https://support.apple.com/guide/iphone/type-with-the-onscreen-keyboard-iph3c50f96e/ios"
+        ],
+        [
+          "Apple: Add or change keyboards",
+          "https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios"
+        ],
+        [
+          "Apple developer documentation: Custom keyboards",
+          "https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/CustomKeyboard.html"
+        ],
+        [
+          "Microsoft SwiftKey: Clipboard",
+          "https://support.microsoft.com/en-us/swiftkey-keyboard/how-does-the-clipboard-work-with-microsoft-swiftkey-keyboard"
+        ],
+        [
+          "Typez product features",
+          "/"
+        ],
+        [
+          "Typez privacy policy",
+          "/privacy.html"
+        ],
+        [
+          "Typez demo on X",
+          "https://x.com/JavokhirJS/status/2081742329099206940"
+        ]
+      ]
+    },
+    {
+      "slug": "best-iphone-keyboard-apps",
+      "scheduledFor": "2026-12-09",
+      "title": "Best iPhone Keyboards in 2026: 4 Options Compared",
+      "description": "Compare Apple Keyboard, Gboard, Microsoft SwiftKey and Typez for cursor controls, clipboard, number rows, predictions, customization and pricing on iPhone.",
+      "category": "Keyboard comparisons",
+      "deck": "Choose a keyboard based on what you actually want to improve.",
+      "answer": "Apple’s built-in keyboard is the default choice for system integration. Gboard is an option for glide typing and emoji search, while SwiftKey offers predictions, swipe typing and saved clips. Typez focuses on precise cursor controls, a number row and saved text, but currently lacks autocorrection.",
+      "sections": [
+        [
+          "how-we-chose",
+          "Four iPhone keyboards worth comparing",
+          "<p>This is a feature-based shortlist written by the creator of Typez, not an independent review or a measured speed test. It compares the iPhone versions specifically. We use official product listings and support pages; unconfirmed features are marked rather than assumed from Android.</p>"
+        ],
+        [
+          "feature-comparison",
+          "iPhone keyboard feature comparison",
+          "<div style=\"overflow-x:auto\"><table><thead><tr><th scope=\"col\">Feature</th><th scope=\"col\">Apple</th><th scope=\"col\">Gboard</th><th scope=\"col\">SwiftKey</th><th scope=\"col\">Typez</th></tr></thead><tbody><tr><th scope=\"row\">Cursor navigation</th><td>Spacebar trackpad</td><td>Spacebar gesture; dedicated arrows not verified</td><td>Dedicated arrows not verified</td><td>Character and word arrow controls</td></tr><tr><th scope=\"row\">Saved text / clipboard</th><td>Text Replacement; no browsable clipboard history</td><td>iOS saved clipboard not verified</td><td>Saved clips</td><td>Import and pin text</td></tr><tr><th scope=\"row\">Permanent number row</th><td>No, standard English layout</td><td>iOS availability not verified</td><td>Yes, optional</td><td>Yes</td></tr><tr><th scope=\"row\">Autocorrection / predictions</th><td>Yes, supported languages</td><td>Yes, settings and language dependent</td><td>Yes, settings and language dependent</td><td>No autocorrection; predictions not verified</td></tr><tr><th scope=\"row\">Swipe typing</th><td>QuickPath</td><td>Glide Typing</td><td>Swipe input</td><td>Not verified</td></tr><tr><th scope=\"row\">Customization</th><td>System settings</td><td>Themes and keyboard settings</td><td>Themes and settings</td><td>Themes, fonts and feedback</td></tr><tr><th scope=\"row\">Price / access</th><td>Included with iOS</td><td>Free US listing</td><td>Free US listing; in-app purchases</td><td>Check current availability and pricing</td></tr></tbody></table></div><p>“Not verified” means the cited iOS sources did not establish the feature; it is not a claim that the feature is absent. Prices and availability can vary by country and change over time.</p>"
+        ],
+        [
+          "apple-keyboard",
+          "Apple Keyboard: best starting point for most iPhone users",
+          "<p>Already installed, Apple’s keyboard supports system text editing, autocorrection, predictions and swipe typing in supported languages. Try the <a href=\"/guides/move-cursor-precisely-iphone/\">spacebar trackpad</a> and Text Replacement before deciding you need an alternative.</p><p><strong>Best fit:</strong> everyday typing with minimal setup. <strong>Trade-off:</strong> the standard English letter layout lacks a permanent number row and a dedicated cursor-arrow row.</p>"
+        ],
+        [
+          "gboard",
+          "Gboard: for glide typing and Google tools",
+          "<p><a href=\"https://apps.apple.com/us/app/gboard-the-google-keyboard/id1091700242\">Gboard for iPhone</a> offers glide typing, emoji and GIF search, and other Google-oriented features. It is listed as free on the US App Store.</p><p><strong>Best fit:</strong> users who prefer gesture typing and Gboard’s search tools. <strong>Trade-off:</strong> do not assume its iOS version has all the clipboard or layout features found on Android.</p>"
+        ],
+        [
+          "swiftkey",
+          "Microsoft SwiftKey: for predictions and swipe typing",
+          "<p><a href=\"https://apps.apple.com/us/app/microsoft-swiftkey-ai-keyboard/id911813648\">Microsoft SwiftKey for iPhone</a> emphasizes learned predictions, autocorrection, swipe input and themes. Microsoft also documents an iOS clipboard that can save clips and an optional permanent number row.</p><p><strong>Best fit:</strong> users who value predictions and want a customizable keyboard with saved text. <strong>Trade-off:</strong> review its optional account features, language support and privacy settings.</p>"
+        ],
+        [
+          "typez",
+          "Typez: for precise editing and saved text",
+          "<p>Typez gives you buttons to move the cursor one character or word at a time, a number row and a clipboard for deliberately imported and pinned text. It also offers themes, fonts and feedback preferences.</p><p><strong>Best fit:</strong> users who frequently edit URLs, addresses, codes or small typos, or repeatedly paste saved phrases. <strong>Trade-off:</strong> autocorrection is not supported at present. Clipboard access requires Full Access, while core typing and cursor navigation do not.</p><p><a href=\"/\">Check Typez’s current availability and see the demo.</a> For a broader comparison, read <a href=\"/guides/apple-keyboard-vs-typez/\">Apple keyboard vs third-party keyboards</a>.</p>"
+        ],
+        [
+          "make-your-own-comparison",
+          "Which iPhone keyboard should you choose?",
+          "<p>Try the same five tasks in each keyboard: write a normal sentence, type a specialist word, fix one character in the middle of a word, enter a mixed address, and insert a frequently used phrase. Compare the experience in your own language and favorite apps.</p><p>Pick the keyboard that helps with your actual workflow, not the one with the longest feature list. Before enabling Full Access, check the developer’s privacy policy and what features need it.</p>"
+        ]
+      ],
+      "sources": [
+        [
+          "Apple: Type with the onscreen keyboard",
+          "https://support.apple.com/guide/iphone/type-with-the-onscreen-keyboard-iph3c50f96e/ios"
+        ],
+        [
+          "Gboard: iPhone App Store listing",
+          "https://apps.apple.com/us/app/gboard-the-google-keyboard/id1091700242"
+        ],
+        [
+          "Google: Set up Gboard on iOS",
+          "https://support.google.com/gboard/answer/6380730?co=GENIE.Platform%3DiOS&hl=en"
+        ],
+        [
+          "SwiftKey: iPhone App Store listing",
+          "https://apps.apple.com/us/app/microsoft-swiftkey-ai-keyboard/id911813648"
+        ],
+        [
+          "Microsoft: SwiftKey clipboard",
+          "https://support.microsoft.com/en-us/swiftkey-keyboard/how-does-the-clipboard-work-with-microsoft-swiftkey-keyboard"
+        ],
+        [
+          "Microsoft: SwiftKey number row",
+          "https://support.microsoft.com/en-us/swiftkey-keyboard/how-do-i-turn-the-number-row-on-off-in-microsoft-swiftkey-keyboard"
+        ],
+        [
+          "Microsoft: SwiftKey setup",
+          "https://support.microsoft.com/en-us/swiftkey-keyboard/how-to-set-up-microsoft-swiftkey-keyboard"
+        ],
+        [
+          "Typez product and availability",
+          "/"
+        ],
+        [
+          "Typez privacy policy",
+          "/privacy.html"
+        ],
+        [
+          "Google: Use your keyboard on iPhone",
+          "https://support.google.com/gboard/answer/2842292?co=GENIE.Platform%3DiOS"
+        ],
+        [
+          "Google: Gboard themes on iOS",
+          "https://support.google.com/gboard/answer/6102154?co=GENIE.Platform%3DiOS&hl=en"
+        ],
+        [
+          "Google: Word suggestions and corrections on iOS",
+          "https://support.google.com/gboard/answer/7068415?co=GENIE.Platform%3DiOS&hl=en"
+        ]
+      ]
     }
   ]
 }
