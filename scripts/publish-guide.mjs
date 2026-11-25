@@ -3,6 +3,7 @@ import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const origin = "https://typez.app";
+const appStoreUrl = "https://apps.apple.com/us/app/typez/id6805516315";
 const escape = (s) => s.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 const jsonScript = (value) => JSON.stringify(value, null, 2).replaceAll("<", "\\u003c");
 export const seoulDate = (instant = new Date()) => new Intl.DateTimeFormat("en-CA", {
@@ -43,7 +44,7 @@ export function renderArticle(article, date, original) {
     <meta name="theme-color" content="#f2f2f7" />
     <link rel="icon" type="image/png" href="/assets/typez-icon.png" />
     <link rel="apple-touch-icon" href="/assets/typez-icon.png" />
-    <link rel="stylesheet" href="/styles.css?v=7" />
+    <link rel="stylesheet" href="/styles.css?v=8" />
     <link rel="stylesheet" href="/guides.css?v=1" />
     <script type="application/ld+json">${jsonScript(schema)}</script>
   </head>
@@ -56,7 +57,7 @@ export function renderArticle(article, date, original) {
           <p class="eyebrow">iPhone keyboard guides</p>
           <h1>${escape(article.title)}</h1>
           <p class="guide-deck">${escape(article.deck)}</p>
-          <p class="guide-byline">By Javokhir, creator of Typez · Published <time datetime="${date}">${pretty}</time><br />Published by Typez, an iPhone keyboard app currently in App Store review.</p>
+          <p class="guide-byline">By Javokhir, creator of Typez · Published <time datetime="${date}">${pretty}</time><br />Published by Typez, an iPhone keyboard app.</p>
         </header>
         <div class="guide-body">
           <div class="guide-answer"><p>${escape(article.answer)}</p></div>
@@ -65,15 +66,13 @@ export function renderArticle(article, date, original) {
           </ol></nav>
           ${article.sections.map(([id, title, content]) => `<h2 id="${id}">${escape(title)}</h2>\n          ${content}`).join("\n          ")}
           <aside class="guide-cta" aria-labelledby="guide-cta-title">
-            <p class="eyebrow">Try Typez on TestFlight</p>
             <h2 id="guide-cta-title">Make everyday typing easier.</h2>
-            <p>Join the waitlist and we'll send you a TestFlight invitation, plus an update when Typez launches on the App Store.</p>
-            <a class="primary-button" href="/#waitlist">Join the waitlist</a>
+            <a class="primary-button" href="${appStoreUrl}">Download on the App Store</a>
           </aside>
           <section class="guide-sources" aria-labelledby="sources-title">
             <h2 id="sources-title">Sources and further reading</h2><ul>
               ${article.sources.map(([label, href]) => `<li><a href="${escape(href)}">${escape(label)}</a></li>`).join("\n              ")}
-            </ul><p>Menu wording and behavior can vary by iOS version, language, and app. Typez details describe the current pre-release app. This guide does not claim independent device testing.</p>
+            </ul><p>Menu wording and behavior can vary by iOS version, language, and app. This guide does not claim independent device testing.</p>
           </section>
         </div>
       </article>

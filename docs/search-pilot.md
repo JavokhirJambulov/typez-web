@@ -45,18 +45,15 @@ promise that a new site will rank within it.
 For the article URL, record weekly impressions, clicks, CTR, average position,
 and the queries that generate impressions. Separate branded searches from
 non-brand questions. Also review mobile traffic: impressions on unrelated
-queries or desktop-only visits may not translate into iPhone testers.
+queries or desktop-only visits may not translate into iPhone downloads.
 
-Use existing Vercel Web Analytics for article page views and Brevo for new
-waitlist contacts. Record TestFlight invitations sent and accepted separately
-in App Store Connect. The current site does not attribute a Brevo signup to an
-individual article, and aggregate signup changes do not prove SEO caused them.
-Once the app launches, replace waitlist CTAs with the real App Store listing and
-use App Store Connect campaign links to measure acquisition where supported.
+Use Vercel Web Analytics for article page views. The site links directly to the
+Typez App Store listing. App Store Connect campaign links can measure acquisition
+where supported.
 
 If the page is not indexed, diagnose crawl access, canonical selection, and
 content usefulness first. If it earns relevant impressions but few clicks,
-review the title and search intent. If it earns visits but few signups, improve
+review the title and search intent. If it earns visits but few downloads, improve
 the connection between the guide and the product. Expand into related topics
 when relevant non-brand discovery is growing; avoid creating near-duplicate
 articles just to meet a daily quota.
@@ -74,13 +71,10 @@ articles just to meet a daily quota.
   author and real dates, plus matching Article and BreadcrumbList data. Keep the
   URL evergreen. Change modification dates only for substantive updates.
 - Run `node --test tests/*.test.mjs`, then inspect mobile and desktop rendering,
-  image loading, keyboard navigation, and the waitlist flow with a mocked request.
+  image loading, keyboard navigation, and the App Store download links.
 - Deploy through the repository's Vercel workflow. Repeat production URL checks.
 
-## TestFlight operations
+## Pre-launch waitlist
 
-The waitlist form stores email addresses in Brevo; it does not call App Store
-Connect. The owner must invite consenting subscribers through TestFlight.
-External testing may require Apple's beta review before invitations can be used.
-Do not submit real contacts as part of automated tests. Keep invitation and
-launch messages consistent with the consent text and honor unsubscribes.
+The pre-launch waitlist collected email addresses in Brevo. Keep any invitation
+and launch messages consistent with the consent text and honor unsubscribes.

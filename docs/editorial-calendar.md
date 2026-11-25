@@ -19,8 +19,7 @@ structured data, and sitemap entry on its actual publication date.
 Apple's live keyboard user-guide pages and archived custom-keyboard developer
 documentation were read while preparing these drafts. The developer source is
 identified as archived in the articles. Do not claim device testing that was not
-performed. App Store review status and TestFlight copy must be revisited if the
-app launches before these articles publish.
+performed. Link to the live Typez App Store listing when a guide recommends the app.
 
 ## Topics to research next
 

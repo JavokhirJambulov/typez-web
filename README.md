@@ -9,7 +9,6 @@ Minimal static website for the Typez iPhone keyboard.
 - `terms.html` — terms of use
 - `support.html` — support contact and keyboard/purchase help
 - `styles.css` — shared styling for all pages
-- `waitlist.js` — email-only Brevo waitlist submission and feedback
 - `guides/` — static guide index and articles
 - `guides.css` — guide layouts, loaded only on guide pages
 - `robots.txt` and `sitemap.xml` — crawl guidance and canonical page list
@@ -17,28 +16,10 @@ Minimal static website for the Typez iPhone keyboard.
 
 There is no framework, package manager, JavaScript bundle, or build step.
 
-## Launch waitlist
+## App Store downloads
 
-The landing page submits to the public endpoint for Brevo's **TypeZ launch
-waitlist** form, which adds contacts to **Typez Launch List**. No API key belongs
-in this repository. The form keeps Brevo's `EMAIL`, `email_address_check`
-(honeypot), and `locale` fields; the browser validates email format before sending.
-Success appears only after Brevo confirms the signup. A failed request keeps the
-email available for retry. Without JavaScript, the form posts to Brevo directly.
-
-Manage the form's list and confirmation settings in Brevo. Currently it uses
-**No confirmation email**; Brevo requires account phone verification to enable
-single or double confirmation. If you add fields or change the confirmation
-flow, regenerate the embed and update this integration to match.
-
-Run the submission checks with `node --test tests/waitlist.test.mjs`. Before
-publishing, submit an address you own through the local page, verify the success
-message, and find that contact in **Typez Launch List** in Brevo.
-
-While the app is in App Store review, the waitlist offers TestFlight invitations
-and launch updates. The form only adds contacts to Brevo: it does **not** enroll
-testers or send TestFlight invitations automatically. Invite opted-in contacts
-through App Store Connect and manage unsubscribes before sending updates.
+The homepage and guides link directly to the [Typez App Store listing](https://apps.apple.com/us/app/typez/id6805516315).
+The privacy policy describes how Typez handles emails collected through the pre-launch waitlist.
 
 ## Guides and search
 
@@ -95,7 +76,6 @@ Connect Support URL. Keep `support@typez.app` routing active and monitored.
 ## Before the public launch
 
 - Connect the final Typez domain.
-- Replace the waitlist form and waitlist links with the final Typez App Store listing URL once the app is available.
 - Keep `https://typez.app` as the canonical domain and update the sitemap when adding pages.
 - Review the privacy policy and terms whenever the app's data practices change.
 - Configure and document the production Amplitude retention period before release.

@@ -64,3 +64,18 @@ test("article structured data points to its canonical URL and actual image", () 
   const crumbs = data["@graph"].find((item) => item["@type"] === "BreadcrumbList");
   assert.equal(crumbs.itemListElement.at(-1).item, canonical(html));
 });
+
+test("homepage and guides send visitors directly to Typez on the App Store", () => {
+  const appStore = "https://apps.apple.com/us/app/typez/id6805516315";
+  for (const file of files.filter((path) => path === "index.html" || path.startsWith("guides/"))) {
+    const html = read(file);
+    const callsToAction = [...html.matchAll(/<a class="(?:nav-cta|primary-button)[^"]*" href="([^"]+)">([^<]+)<\/a>/g)];
+    const expectedCount = file === "index.html" ? 3 : file === "guides/index.html" ? 1 : 2;
+    assert.equal(callsToAction.length, expectedCount, file);
+    for (const [, href, label] of callsToAction) {
+      assert.equal(href, appStore, file);
+      assert.equal(label, "Download on the App Store", file);
+    }
+    assert.doesNotMatch(html, /waitlist|App Store review|TestFlight/i, file);
+  }
+});

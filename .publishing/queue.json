@@ -24,7 +24,7 @@
         [
           "number-row-keyboard",
           "When a dedicated number row helps",
-          "<p>If you frequently mix letters and numbers—street addresses, product names, reference numbers, or dates—a visible row can reduce layout switching. The tradeoff is space: an extra row can take more screen height or require a denser layout.</p><p>Typez includes a number row above the letters, alongside precise cursor controls and saved text. This guide is published by Typez’s creator, so that recommendation is our own product. Typez is currently in App Store review; <a href=\"/#waitlist\">join the waitlist for a TestFlight invitation</a> if you want to try it.</p><p>Use a keyboard that fits the text you write most often. A person who mainly writes messages may prefer a simpler layout; someone repeatedly entering mixed codes may value the extra row more.</p>"
+          "<p>If you frequently mix letters and numbers—street addresses, product names, reference numbers, or dates—a visible row can reduce layout switching. The tradeoff is space: an extra row can take more screen height or require a denser layout.</p><p>Typez includes a number row above the letters, alongside precise cursor controls and saved text. This guide is published by Typez’s creator, so that recommendation is our own product. <a href=\"https://apps.apple.com/us/app/typez/id6805516315\">Download Typez on the App Store</a>.</p><p>Use a keyboard that fits the text you write most often. A person who mainly writes messages may prefer a simpler layout; someone repeatedly entering mixed codes may value the extra row more.</p>"
         ],
         [
           "enable-keyboard",
@@ -85,7 +85,7 @@
         [
           "typez",
           "How Typez uses Full Access",
-          "<p>Typez’s core typing and cursor navigation work without Full Access. Optional clipboard functionality, including making saved items available inside the keyboard, needs Full Access because of iOS restrictions.</p><p>Typez reads clipboard text after you choose an import action. Saved clipboard items stay on the device. Enabling Full Access does not cause Typez to upload typing or clipboard contents, and those contents are not included in analytics. Typez does use other app analytics and purchase services, described in the <a href=\"/privacy.html\">privacy policy</a>.</p><p>This guide is published by Typez’s creator. Typez is currently in App Store review; <a href=\"/#waitlist\">join the waitlist for a TestFlight invitation</a> to try it.</p>"
+          "<p>Typez’s core typing and cursor navigation work without Full Access. Optional clipboard functionality, including making saved items available inside the keyboard, needs Full Access because of iOS restrictions.</p><p>Typez reads clipboard text after you choose an import action. Saved clipboard items stay on the device. Enabling Full Access does not cause Typez to upload typing or clipboard contents, and those contents are not included in analytics. Typez does use other app analytics and purchase services, described in the <a href=\"/privacy.html\">privacy policy</a>.</p><p>This guide is published by Typez’s creator. <a href=\"https://apps.apple.com/us/app/typez/id6805516315\">Download Typez on the App Store</a>.</p>"
         ],
         [
           "settings",
@@ -151,7 +151,7 @@
         [
           "typez",
           "What to expect when using Typez",
-          "<p>Typez is a third-party iPhone keyboard, so it follows these system restrictions too. Its cursor controls, number row, and saved-text clipboard do not override an app’s decision to use Apple’s keyboard.</p><p>This guide is published by Typez’s creator. Typez is currently in App Store review; <a href=\"/#waitlist\">join the waitlist for a TestFlight invitation</a>. For help with saved items, read our <a href=\"/guides/iphone-clipboard-history/\">iPhone clipboard-history guide</a> before trying an uninstall.</p>"
+          "<p>Typez is a third-party iPhone keyboard, so it follows these system restrictions too. Its cursor controls, number row, and saved-text clipboard do not override an app’s decision to use Apple’s keyboard.</p><p>This guide is published by Typez’s creator. <a href=\"https://apps.apple.com/us/app/typez/id6805516315\">Download Typez on the App Store</a>. For help with saved items, read our <a href=\"/guides/iphone-clipboard-history/\">iPhone clipboard-history guide</a> before trying an uninstall.</p>"
         ]
       ],
       "sources": [
@@ -202,7 +202,7 @@
         [
           "when-it-does-not-work",
           "Why is the iPhone cursor difficult to move?",
-          "<p>If direct tapping keeps selecting a word or moving to its edge, try the spacebar gesture instead. If a third-party keyboard is missing, test it in Notes; password fields and some other fields require Apple’s keyboard.</p><p>Typez offers character and word controls without requiring Full Access. Visit the <a href=\"/\">Typez homepage</a> to check availability and join the waitlist for TestFlight.</p>"
+          "<p>If direct tapping keeps selecting a word or moving to its edge, try the spacebar gesture instead. If a third-party keyboard is missing, test it in Notes; password fields and some other fields require Apple’s keyboard.</p><p>Typez offers character and word controls without requiring Full Access. <a href=\"https://apps.apple.com/us/app/typez/id6805516315\">Download Typez on the App Store</a>.</p>"
         ]
       ],
       "sources": [
