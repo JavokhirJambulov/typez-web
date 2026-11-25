@@ -43,7 +43,7 @@ test("publishes one due article with actual dates and updates discovery atomical
   const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]+?)<\/script>/)[1]);
   assert.equal(schema["@graph"][0].datePublished, "2026-11-13");
   assert.equal(schema["@graph"][0].mainEntityOfPage, result.url);
-  assert.ok(html.includes('<a class="primary-button" href="https://apps.apple.com/us/app/typez/id6805516315">Download on the App Store</a>'));
+  assert.match(html, /<aside class="guide-cta"[^>]*>\s*<h2[^>]*>[^<]+<\/h2>\s*<a class="app-store-badge" href="https:\/\/apps\.apple\.com\/us\/app\/typez\/id6805516315">\s*<img src="\/assets\/download-on-the-app-store\.svg"[^>]*alt="Download on the App Store"/);
   assert.doesNotMatch(html, /waitlist|App Store review|TestFlight/i);
   assert.ok(readFileSync(join(dir, "guides/index.html"), "utf8").includes(result.url));
   assert.ok(readFileSync(join(dir, "sitemap.xml"), "utf8").includes(`<loc>${result.url}</loc>`));

@@ -93,8 +93,6 @@ a {
   background: var(--ink);
   color: white;
   font-weight: 650;
-  text-align: center;
-  text-wrap: balance;
 }
 
 .site-nav .nav-cta:hover {
@@ -158,29 +156,23 @@ p {
   margin-top: 34px;
 }
 
-.primary-button {
-  display: inline-grid;
-  min-height: 54px;
-  place-items: center;
-  padding: 0 22px;
-  border: 0;
-  border-radius: 15px;
-  background: var(--ink);
-  color: white;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 680;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 160ms ease, transform 160ms ease;
+.app-store-badge {
+  display: inline-block;
+  border-radius: 9px;
+  vertical-align: middle;
 }
 
-.primary-button:hover {
-  background: #343438;
-  transform: translateY(-1px);
+.app-store-badge img {
+  display: block;
+  width: auto;
+  height: 54px;
 }
 
-.primary-button:focus-visible {
+.site-nav .app-store-badge img {
+  height: 40px;
+}
+
+.app-store-badge:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
@@ -853,6 +845,10 @@ p {
     display: inline-grid;
   }
 
+  .site-nav > .app-store-badge {
+    display: block;
+  }
+
   .site-nav .nav-cta {
     min-height: 39px;
     padding-inline: 14px;
@@ -874,10 +870,6 @@ p {
 
   .hero-actions {
     flex-direction: column;
-  }
-
-  .primary-button {
-    width: min(100%, 340px);
   }
 
   .demo-frame {
@@ -999,15 +991,12 @@ p {
 
 @media (max-width: 400px) {
   .site-header .brand-logo {
-    width: 72px;
+    width: 68px;
   }
 
   .site-nav {
-    gap: 10px;
-  }
-
-  .site-nav .nav-cta {
-    padding: 5px 8px;
+    gap: 8px;
+    font-size: 13px;
   }
 }
 

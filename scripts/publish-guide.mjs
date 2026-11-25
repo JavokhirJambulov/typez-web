@@ -44,8 +44,8 @@ export function renderArticle(article, date, original) {
     <meta name="theme-color" content="#f2f2f7" />
     <link rel="icon" type="image/png" href="/assets/typez-icon.png" />
     <link rel="apple-touch-icon" href="/assets/typez-icon.png" />
-    <link rel="stylesheet" href="/styles.css?v=8" />
-    <link rel="stylesheet" href="/guides.css?v=1" />
+    <link rel="stylesheet" href="/styles.css?v=9" />
+    <link rel="stylesheet" href="/guides.css?v=2" />
     <script type="application/ld+json">${jsonScript(schema)}</script>
   </head>
   <body>
@@ -67,7 +67,9 @@ export function renderArticle(article, date, original) {
           ${article.sections.map(([id, title, content]) => `<h2 id="${id}">${escape(title)}</h2>\n          ${content}`).join("\n          ")}
           <aside class="guide-cta" aria-labelledby="guide-cta-title">
             <h2 id="guide-cta-title">Make everyday typing easier.</h2>
-            <a class="primary-button" href="${appStoreUrl}">Download on the App Store</a>
+            <a class="app-store-badge" href="${appStoreUrl}">
+              <img src="/assets/download-on-the-app-store.svg" width="120" height="40" alt="Download on the App Store" />
+            </a>
           </aside>
           <section class="guide-sources" aria-labelledby="sources-title">
             <h2 id="sources-title">Sources and further reading</h2><ul>

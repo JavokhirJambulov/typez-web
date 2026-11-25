@@ -69,12 +69,13 @@ test("homepage and guides send visitors directly to Typez on the App Store", () 
   const appStore = "https://apps.apple.com/us/app/typez/id6805516315";
   for (const file of files.filter((path) => path === "index.html" || path.startsWith("guides/"))) {
     const html = read(file);
-    const callsToAction = [...html.matchAll(/<a class="(?:nav-cta|primary-button)[^"]*" href="([^"]+)">([^<]+)<\/a>/g)];
+    const callsToAction = [...html.matchAll(/<a class="app-store-badge[^"]*" href="([^"]+)">\s*(<img [^>]+>)\s*<\/a>/g)];
     const expectedCount = file === "index.html" ? 3 : file === "guides/index.html" ? 1 : 2;
     assert.equal(callsToAction.length, expectedCount, file);
-    for (const [, href, label] of callsToAction) {
+    for (const [, href, image] of callsToAction) {
       assert.equal(href, appStore, file);
-      assert.equal(label, "Download on the App Store", file);
+      assert.match(image, /src="\/assets\/download-on-the-app-store\.svg"/, file);
+      assert.match(image, /alt="Download on the App Store"/, file);
     }
     assert.doesNotMatch(html, /waitlist|App Store review|TestFlight/i, file);
   }
